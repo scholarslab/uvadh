@@ -1,0 +1,329 @@
+* {
+    @include box-sizing(border-box);
+}
+
+@include establish-baseline;
+
+html {
+    /*@include background(*/
+        /*image-url('dimension.png')*/
+    /*);*/
+    /*background: desaturate($base-color-darker, 80);*/
+
+}
+
+@include cw-classes($base-color);
+
+#colors div {
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+
+h1,h2 {
+    clear:both;
+}
+
+#colors h2 {
+    clear:both;
+}
+
+body {
+    font-family: $default-font;
+    color: $default-color;
+    @include container;
+    background-color:white;
+    @include box-shadow(0 0 36px rgba(black, .5));
+    margin: $base-line-height auto;
+}
+
+a {
+    color: $link-color;
+    @include link-colors($link-color, $link-hover-color, $link-active-color,
+    $link-visited-color, $link-focus-color);
+
+    @include transition(color $default-transition-duration, background-color $default-transition-duration);
+
+    &:before {
+        @include single-transition(color);
+    }
+
+    img {
+        @include single-transition(opacity);
+    }
+}
+
+#{headings()} {
+    font-family: $sans-serif;
+
+    a {
+        text-decoration:none;
+    }
+}
+
+h1 {
+    @include adjust-font-size-to(54px);
+    @include adjust-leading-to(2,54px);
+}
+
+h2 {
+    @include adjust-font-size-to(24px);
+    @include leader(2, 24px);
+    color: $default-color-lighter;
+    font-style:italic;
+
+    h1 + &,
+    h1 ~ * &:first-child {
+        @include leader(1, 24px);
+    }
+
+}
+
+h3 {
+    @include adjust-font-size-to(20px);
+    color: $default-color-light;
+    font-weight:normal;
+    @include leader(2, 20px);
+
+    h2 + & {
+        @include leader(1, 20px);
+    }
+}
+
+h4 {
+    @include adjust-font-size-to($base-font-size);
+    @include leader(2);
+    h3 + & {
+        @include leader(1);
+    }
+}
+
+h5 {
+    @include adjust-font-size-to($base-font-size);
+    color: $default-color-light;
+    @include leader(2);
+    h4 + & {
+        @include leader(1);
+    }
+}
+
+h6 {
+    @include adjust-font-size-to($base-font-size);
+    font-style:italic;
+    color: $default-color-light;
+    @include leader(2);
+    h5 + & {
+        @include leader(1);
+    }
+}
+
+#{headings(3,6)} {
+    + p {
+        margin-top:0;
+    }
+}
+
+p {
+    margin: rhythm(1) 0;
+}
+
+blockquote {
+    margin:0;
+    @include adjust-font-size-to(20px);
+    font-style:italic;
+
+    figure & {
+        text-align:left;
+    }
+
+    & + figcaption {
+        margin-left: rhythm(1.25, 14px);
+        text-align:left;
+    }
+
+    & :last-child {
+        margin-bottom:0;
+    }
+}
+
+dl {
+  margin: rhythm(1) 0;
+}
+
+dt {
+    font-weight:bold;
+}
+
+dd {
+    margin: 0 0 rhythm(1) rhythm(1);
+}
+
+ul {
+    list-style:disc;
+}
+
+ol {
+    list-style:decimal;
+}
+
+ul,ol {
+    padding:0;
+    margin: rhythm(1) 0 rhythm(1) rhythm(1);
+
+    nav & {
+        margin-left:0;
+    }
+
+    ul {
+        list-style: circle;
+    }
+
+    ol {
+        list-style: upper-alpha;
+    }
+
+    ul, ol {
+        margin: 0 0 0 rhythm(1);
+
+        ul {
+            list-style:square;
+        }
+
+        ol {
+            list-style:lower-alpha;
+        }
+    }
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+th,
+td {
+    padding: rhythm(1) rhythm(0.5) 0;
+    @include trailing-border(1px);
+    border-color: rgba($default-color,.2);
+}
+
+th {
+    @include trailing-border(3px);
+    text-align:left;
+}
+
+img {
+    max-width:100%;
+    width:auto;
+    height:auto;
+}
+
+code {
+    font-family: monospace;
+    color: $code-color;
+}
+
+del {
+    color: $default-color-lighter;
+}
+
+ins {
+    text-decoration:none;
+    background: $ins-color;
+}
+
+address {
+    font-style:normal;
+    margin: rhythm(1) 0;
+}
+
+br {
+    margin:0;
+    line-height:0;
+}
+
+hr {
+    border:none;
+    text-align:center;
+    &:before {
+        display:block;
+        content: " · · · · · ";
+        color: rgba($default-color-light, 0.5);
+    }
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+#skiplink {
+    @extend .visuallyhidden;
+}
+
+
+header[role=banner] {
+    background-color: $base-color-darkest;
+    height: 100px;
+    @include bleed();
+
+}
+
+main {
+    
+    .profile & {
+
+        article header {
+            @include bleed();
+            background: image-url('p6.png');
+            @include padding-leader(2);
+            @include padding-trailer(2);
+            border-bottom: 1px solid rgba(black, 0.075);
+        
+            h1 {
+                margin-top:0;
+            }
+        }
+
+        figure {
+            display:block;
+            @include bleed();
+            border: 1px solid rgba(black, 0.075);
+            border-width: 1px 0;
+
+            &.image {
+                img {
+                    display:block;
+                }
+            }
+
+            &.quote {
+                background: image-url('wavegrid.png');
+                @include padding-leader(2);
+                @include padding-trailer(2);
+
+                blockquote {
+                    text-align:center;
+                    
+                    @include adjust-font-size-to(40px);
+                    @include adjust-leading-to(2, 40px);
+                }
+            }
+        }
+    }
+}
+
+footer[role=contentinfo] {}
+
+@include at-breakpoint(9) {}
+
+@include at-breakpoint(14) {
+
+}
+
