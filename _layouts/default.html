@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
         <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400italic,700italic,400,700|Source+Sans+Pro:400italic,700italic,400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="c/style.css">
-        <script src="j/modernizr.min.js"></script>
-        <script src="j/respond.min.js"></script>
+        <link rel="stylesheet" href="{{site.baseurl}}c/style.css">
+        <script src="{{site.baseurl}}j/modernizr.min.js"></script>
+        <script src="{{site.baseurl}}j/respond.min.js"></script>
     </head>
     <body class="{{ page.bodyclass }}">
         <a id="skiplink" href="#main">Skip to Main Content</a>
         
         <header role="banner">
-            <h1><a href="index.html">Digital Humanities @ <abbr title="The University of Virginia">U.Va.</abbr></a></h1> 
+            <h1><a href="{{site.baseurl}}">Digital Humanities @ <abbr title="The University of Virginia">U.Va.</abbr></a></h1> 
         </header>
 
         <main role="main" id="main">
