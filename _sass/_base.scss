@@ -17,14 +17,15 @@ $grid-background-baseline-height: $base-line-height;
 $default-transition-duration: .5s;
 
 // Susy
-$total-columns: 14;
+$total-columns: 18;
 $column-width: $base-line-height * 2;
-$gutter-width: $base-line-height / 2;
-$container-style: magic;
+/*$gutter-width: $base-line-height / 2;*/
+$gutter-width: 0px;
+$container-style: fluid;
 $grid-padding: $column-width + $gutter-width;
 
 // Colors
-$base-color                     : rgb(0,120,255);
+$base-color                     : #cc4422;
 
 $base-color-light               : lighten($base-color, 10%);
 $base-color-lighter             : lighten($base-color, 20%);
@@ -35,15 +36,16 @@ $base-color-darker              : darken($base-color, 20%);
 $base-color-darkest             : darken($base-color, 30%);
 
 $complementary-color            : color-wheel($base-color, 'complementary');
+$complementary-color            : darken($complementary-color, 20);
 
-$default-color                  : rgb(75,75,75);
+$default-color                  : rgb(90,90,90);
 $default-color-light            : rgba($default-color, 0.75);
 $default-color-lighter          : rgba($default-color, 0.5);
 $default-color-lightest         : rgba($default-color, 0.1);
 
 $link-color                     : $base-color;
 $link-visited-color             : lighten($link-color, 10%);
-$link-hover-color               : darken($link-color, 20%);
+$link-hover-color               : darken($link-color, 10%);
 $link-focus-color               : $link-hover-color;
 $link-active-color              : $link-color;
 
