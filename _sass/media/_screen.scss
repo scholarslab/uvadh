@@ -5,7 +5,7 @@
 @include establish-baseline;
 
 html {
-    background-color: $base-color-darkest;
+    background-color: $complementary-color;
 }
 
 body {
@@ -494,8 +494,13 @@ figure {
     }
 }
 
+#introduction {
+    h1 {
+        @extend .visuallyhidden;
+    }
+}
 
-.profile header {
+.profile main header {
     @include bleed;
     @include background(
         linear-gradient(left bottom, color-stops(transparent 0, rgba(white, 0.2) 50%, rgba(white, 0.1) 50%, transparent 100%)) bottom left no-repeat,    

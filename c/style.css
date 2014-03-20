@@ -426,7 +426,7 @@ table {
   }
 
   html {
-    background-color: #49180c;
+    background-color: #004666;
   }
 
   body {
@@ -445,23 +445,23 @@ table {
   }
 
   a {
-    color: #cc4422;
+    color: #cc4000;
     -webkit-transition: color 0.5s, background-color 0.5s;
     -moz-transition: color 0.5s, background-color 0.5s;
     -o-transition: color 0.5s, background-color 0.5s;
     transition: color 0.5s, background-color 0.5s;
   }
   a:visited {
-    color: #df6142;
+    color: #ff5000;
   }
   a:focus {
-    color: #a0351b;
+    color: #993000;
   }
   a:hover {
-    color: #a0351b;
+    color: #993000;
   }
   a:active {
-    color: #cc4422;
+    color: #cc4000;
   }
   a:before {
     -webkit-transition: color 0.5s;
@@ -493,7 +493,7 @@ table {
     display: block;
     width: 8.33333%;
     height: 5px;
-    background: #136175;
+    background: #004666;
     margin: 0 auto 0.2em;
     content: " ";
   }
@@ -688,7 +688,7 @@ table {
     color: rgba(90, 90, 90, 0.5);
   }
 
-  .visuallyhidden, #skiplink {
+  .visuallyhidden, #skiplink, #introduction h1 {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -708,11 +708,11 @@ table {
     -ms-border-radius: 1.5em;
     -o-border-radius: 1.5em;
     border-radius: 1.5em;
-    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.125)), color-stop(100%, rgba(255, 255, 255, 0.0125))) repeat-y, #cc4422;
-    background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4422;
-    background: -moz-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4422;
-    background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4422;
-    background: linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4422;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.125)), color-stop(100%, rgba(255, 255, 255, 0.0125))) repeat-y, #cc4000;
+    background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4000;
+    background: -moz-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4000;
+    background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4000;
+    background: linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.0125) 100%) repeat-y, #cc4000;
     background-size: 100% 1px, auto;
     padding: 0.7em;
   }
@@ -724,7 +724,7 @@ table {
     display: block;
     padding: 0;
     clear: both;
-    background-color: #752713;
+    background-color: #662000;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
@@ -775,12 +775,12 @@ table {
   .gallery a {
     display: block;
     text-align: center;
-    background: rgba(145, 104, 93, 0.25);
+    background: rgba(153, 83, 51, 0.25);
     color: #fff;
     padding: 4em 0;
   }
   .gallery a:hover, .gallery a:focus {
-    background: rgba(145, 104, 93, 0.75);
+    background: rgba(153, 83, 51, 0.75);
   }
   .gallery a :first-child {
     margin-top: 0;
@@ -805,11 +805,11 @@ table {
     margin-right: -72px;
     padding-right: 72px;
     padding: 2em 0%;
-    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, rgba(255, 255, 255, 0.05))), #136175;
-    background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #136175;
-    background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #136175;
-    background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #136175;
-    background: linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #136175;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, rgba(255, 255, 255, 0.05))), #004666;
+    background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
+    background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
+    background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
+    background: linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background-size: 50% 100px, auto;
   }
   .home header[role=banner] {
@@ -860,7 +860,7 @@ table {
     padding-right: 72px;
     padding-top: 400px;
     background-image: url(http://farm4.staticflickr.com/3712/9759198186_171d49218e_h.jpg);
-    background-color: #1d0a05;
+    background-color: black;
     background-attachment: local;
     background-size: cover;
     background-repeat: no-repeat;
@@ -879,7 +879,7 @@ table {
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    background: #752713;
+    background: #662000;
     color: white;
     color: rgba(255, 255, 255, 0.8);
     padding-top: 4em;
@@ -897,7 +897,7 @@ table {
     padding-right: 11.11111%;
   }
 
-  .profile header {
+  .profile main header {
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
@@ -907,13 +907,13 @@ table {
     background: -moz-linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background: -o-linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background: linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background-color: #1d0a05;
+    background-color: black;
     background-size: auto, cover;
     background-position: inherit;
     color: #fff;
     color: rgba(255, 255, 255, 0.8);
   }
-  .profile header h1:before {
+  .profile main header h1:before {
     display: none;
   }
 
