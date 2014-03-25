@@ -1,3 +1,3 @@
-exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', '_settings.yml']
+exclude: ['Rakefile', 'Procfile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', '_settings.yml']
 
 title: Digital Humanities @ U.Va.
