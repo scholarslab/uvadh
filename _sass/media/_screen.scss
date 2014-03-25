@@ -379,7 +379,7 @@ hr {
             }
             margin:0;
             font-style:normal;
-            @include adjust-font-size-to(32px);
+            @include adjust-font-size-to(28px);
             color:white;
             text-align:inherit;
         }
@@ -388,6 +388,7 @@ hr {
             color: white;
             color: rgba(white, 0.8);
             @include adjust-font-size-to(14px);
+            @include adjust-leading-to(0.5,14px);
         }
     }
 }
@@ -424,6 +425,7 @@ header[role=banner] {
         margin:0;
         abbr {
             border:none;
+            font-variant:small-caps;
         }
 
         &:before {

@@ -788,8 +788,8 @@ table {
   .gallery a h2 {
     margin: 0;
     font-style: normal;
-    font-size: 1.77778em;
-    line-height: 1.125em;
+    font-size: 1.55556em;
+    line-height: 1.28571em;
     color: white;
     text-align: inherit;
   }
@@ -802,6 +802,7 @@ table {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.77778em;
     line-height: 2.57143em;
+    line-height: 1.28571em;
   }
 
   #uva-link {
@@ -837,6 +838,7 @@ table {
   }
   header[role=banner] h1 abbr {
     border: none;
+    font-variant: small-caps;
   }
   header[role=banner] h1:before {
     display: none;
