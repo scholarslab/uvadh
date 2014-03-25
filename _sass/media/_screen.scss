@@ -270,9 +270,9 @@ hr {
 
 header[role=banner] {
     background-color: $base-color-darkest;
-    height: 100px;
     @include bleed();
-
+    @include padding-leader(1);
+    @include padding-trailer(1);
 }
 
 main {

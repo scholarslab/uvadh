@@ -791,11 +791,12 @@ table {
 
   header[role=banner] {
     background-color: #003066;
-    height: 100px;
     margin-left: -90px;
     padding-left: 90px;
     margin-right: -90px;
     padding-right: 90px;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .profile main article header {
