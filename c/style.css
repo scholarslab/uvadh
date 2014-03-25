@@ -814,7 +814,9 @@ table {
   }
 
   header[role=banner] {
+    z-index: 1;
     display: block;
+    position: relative;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
@@ -850,6 +852,11 @@ table {
   }
   header[role=banner] a:active {
     color: white;
+  }
+
+  main {
+    z-index: 100;
+    position: relative;
   }
 
   section {

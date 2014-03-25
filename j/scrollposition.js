@@ -1,27 +1,23 @@
 $(document).ready(function() {
-    $('section').each(function(){
-        var $section = $(this); // assigning the object
-     
-        $(window).scroll(function() {
-            var $scrollTop = $(window).scrollTop();
-            var $windowHeight = $(window).height();
-            var $documentHeight = $(document).height();
-            var $sectionHeight = $section.height();
 
-            var $difference = $sectionHeight - 400;
+    var $w = $(window);
+    var $banner = $('#banner');
+    var $bannerHeight = $banner.height();
 
-            var $hiddenContentHeight = $documentHeight - $windowHeight;
+    $w.scroll( function()
+    {
+		var $scrollTop = $w.scrollTop();
+		var $transformOffset = $scrollTop/2;
+        var $opacityOffset = ($bannerHeight - $transformOffset) / $bannerHeight;
 
-            var $math = $scrollTop * ($difference / $hiddenContentHeight);
+		$banner.css(
+		    {
+		        transform: "translateY(" + $transformOffset + "px)",
+		        opacity: $opacityOffset
+		    }
+		);
 
-            var $yPos = -($math);
-             
-            // Put together our final background position
-            var $coords = '0 '+ $yPos + 'px';
- 
-            // Move the background
-            $section.css({ backgroundPosition: $coords });
-        });
-    });
+	});
+
 });
 
