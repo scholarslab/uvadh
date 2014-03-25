@@ -293,7 +293,7 @@ hr {
 
 .gallery {
     display:block;
-    padding:0;
+    padding:0 !important;
     @include clearfix;
     clear:both;
     background-color: $base-color-darker;
@@ -313,6 +313,7 @@ hr {
             url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg)
         );
 
+        background-size:cover;        
 
         &:nth-child(2n) {
             @include background-image(
@@ -336,11 +337,13 @@ hr {
             @include background-image(
                 url(http://farm6.staticflickr.com/5502/10510360734_1779edabad_h.jpg)
             );
+
         }
         &:nth-child(4n) {
             @include background-image(
                 url(http://farm6.staticflickr.com/5485/10510343255_39ee93be2e_h.jpg)
             );
+
         }
 
         &:nth-child(5n) {
@@ -354,28 +357,38 @@ hr {
             );
         }
 
-       background-size:cover;
     }
 
     a {
         display:block;
-        text-align:center;
-        background: rgba(desaturate($base-color, 50), 0.25);
+        text-align:right;
+        text-decoration:none;
+        vertical-align:bottom;
+        background: rgba(desaturate($complementary-color, 50), 0.75);
         color: #fff;
-        padding: rhythm(2) 0;
+        padding: rhythm(1) rhythm(1) rhythm(4);
+        max-height: rhythm(6);
         &:hover,
         &:focus {
-            background: rgba(desaturate($base-color, 50), 0.75);
+            background: rgba(desaturate($complementary-color, 50), 0.25);
         }
 
-        & :first-child {
-            margin-top:0;
+        h2 {
+            &:before {
+                display:none;
+            }
+            margin:0;
+            font-style:normal;
+            @include adjust-font-size-to(32px);
+            color:white;
+            text-align:inherit;
         }
-
-        & :last-child {
-            margin-bottom:0;
+        p {
+            margin:0;
+            color: white;
+            color: rgba(white, 0.8);
+            @include adjust-font-size-to(14px);
         }
-
     }
 }
 
@@ -442,10 +455,11 @@ section {
     background-attachment: fixed;
     background-size: cover;
     background-repeat:no-repeat;
+    padding-top: rhythm(2);
+    padding-bottom: rhythm(2);
 
-    > :last-child {
-        margin-bottom:0;
-        padding-bottom: rhythm(1);
+    > * {
+        @include pad(2,2);
     }
 
     &:before {
@@ -466,7 +480,10 @@ section {
 
     h1 {
         margin-top:0;
-        @include padding-leader(2,54px);
+    }
+
+    &:nth-child(2n) {
+        background: desaturate(lighten($complementary-color, 70%), 50);
     }
 }
 
@@ -497,13 +514,27 @@ figure {
 #introduction {
     h1 {
         @extend .visuallyhidden;
+        margin:0;
     }
+
+    p {
+        margin:0;
+        @include adjust-font-size-to(36px);
+        @include adjust-leading-to(2,36px);
+        font-style:italic;
+        text-align:center;
+    }
+}
+
+#categories {
+    padding-top:0;
+    padding-bottom:0;
 }
 
 .profile main header {
     @include bleed;
     @include background(
-        linear-gradient(left bottom, color-stops(transparent 0, rgba(white, 0.2) 50%, rgba(white, 0.1) 50%, transparent 100%)) bottom left no-repeat,    
+        linear-gradient(left, color-stops(transparent 0, rgba(white, 0.2) 50%, rgba(white, 0.1) 50%, transparent 100%)) bottom left no-repeat,    
         url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat
     );
     background-color: darken($base-color, 40);

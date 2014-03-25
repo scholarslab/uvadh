@@ -722,7 +722,7 @@ table {
 
   .gallery {
     display: block;
-    padding: 0;
+    padding: 0 !important;
     clear: both;
     background-color: #662000;
     margin-left: -72px;
@@ -774,19 +774,34 @@ table {
   }
   .gallery a {
     display: block;
-    text-align: center;
-    background: rgba(153, 83, 51, 0.25);
+    text-align: right;
+    text-decoration: none;
+    vertical-align: bottom;
+    background: rgba(25, 61, 77, 0.75);
     color: #fff;
-    padding: 4em 0;
+    padding: 2em 2em 8em;
+    max-height: 12em;
   }
   .gallery a:hover, .gallery a:focus {
-    background: rgba(153, 83, 51, 0.75);
+    background: rgba(25, 61, 77, 0.25);
   }
-  .gallery a :first-child {
-    margin-top: 0;
+  .gallery a h2 {
+    margin: 0;
+    font-style: normal;
+    font-size: 1.77778em;
+    line-height: 1.125em;
+    color: white;
+    text-align: inherit;
   }
-  .gallery a :last-child {
-    margin-bottom: 0;
+  .gallery a h2:before {
+    display: none;
+  }
+  .gallery a p {
+    margin: 0;
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.77778em;
+    line-height: 2.57143em;
   }
 
   #uva-link {
@@ -846,10 +861,12 @@ table {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 4em;
+    padding-bottom: 4em;
   }
-  section > :last-child {
-    margin-bottom: 0;
-    padding-bottom: 2em;
+  section > * {
+    padding-left: 11.11111%;
+    padding-right: 11.11111%;
   }
   section:before {
     display: none;
@@ -871,7 +888,9 @@ table {
   }
   section h1 {
     margin-top: 0;
-    padding-top: 1.33333em;
+  }
+  section:nth-child(2n) {
+    background: #d9eaf2;
   }
 
   figure.quote {
@@ -897,16 +916,33 @@ table {
     padding-right: 11.11111%;
   }
 
+  #introduction h1 {
+    margin: 0;
+  }
+  #introduction p {
+    margin: 0;
+    font-size: 2em;
+    line-height: 2em;
+    line-height: 2em;
+    font-style: italic;
+    text-align: center;
+  }
+
+  #categories {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .profile main header {
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    background: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, transparent), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -webkit-linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -moz-linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -o-linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: linear-gradient(left bottom, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: -webkit-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: -moz-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: -o-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background-color: black;
     background-size: auto, cover;
     background-position: inherit;
