@@ -947,13 +947,9 @@ table {
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -moz-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -o-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background-color: black;
-    background-size: auto, cover;
+    background-size: cover;
     background-position: inherit;
     color: #fff;
     color: rgba(255, 255, 255, 0.8);

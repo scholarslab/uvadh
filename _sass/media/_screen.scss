@@ -528,11 +528,10 @@ figure {
 .profile main header {
     @include bleed;
     @include background(
-        linear-gradient(left, color-stops(transparent 0, rgba(white, 0.2) 50%, rgba(white, 0.1) 50%, transparent 100%)) bottom left no-repeat,    
         url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat
     );
     background-color: darken($base-color, 40);
-    background-size: auto, cover;
+    background-size: cover;
     background-position:inherit;
 
     color: #fff;
