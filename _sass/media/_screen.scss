@@ -364,6 +364,7 @@ hr {
         vertical-align:bottom;
         background: rgba(desaturate($complementary-color, 50), 0.75);
         color: #fff;
+        outline:0;
         padding: rhythm(1) rhythm(1) rhythm(4);
         max-height: rhythm(6);
         &:hover,
