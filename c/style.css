@@ -989,6 +989,11 @@ table {
     text-shadow: none;
     color: transparent;
     vertical-align: sub !important;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+  .elsewhere a:hover, .elsewhere a:active {
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .elsewhere a:before {
@@ -1001,7 +1006,7 @@ table {
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
-    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
   }
 
   .google:before {

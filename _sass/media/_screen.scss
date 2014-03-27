@@ -577,6 +577,12 @@ footer[role=contentinfo] {
 .elsewhere a {
   @include squish-text();
   vertical-align:sub !important;
+  color: rgba(white,0.5);
+  text-decoration:none;
+
+  &:hover, &:active {
+    color: rgba(white,0.75);
+  }
 }
 
 .elsewhere a:before {
@@ -589,7 +595,7 @@ footer[role=contentinfo] {
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
-  color: rgba(white,0.5);
+  text-decoration:none;
 }
 
 .google:before {
