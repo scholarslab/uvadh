@@ -462,7 +462,6 @@ main {
 
 section {
     @include bleed;
-    @include pad(4,4);
     padding-top: rhythm(2);
     padding-bottom: rhythm(2);
     background-color: #fff;
@@ -512,12 +511,9 @@ figure {
 }
 
 #categories {
-    padding-top:0;
-    padding-bottom:0;
+    padding:0;
     @include clearfix;
-    background-color: white;
-    @include susy-grid-background;
-    
+    background-color: lighten($complementary-color, 10%);
 }
 
 #contact {
@@ -532,7 +528,6 @@ figure {
     );
     background-color: darken($base-color, 40);
     background-size: cover;
-    background-position:inherit;
 
     color: #fff;
     color: rgba(white, 0.8);
