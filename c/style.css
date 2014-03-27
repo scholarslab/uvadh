@@ -409,6 +409,14 @@ table {
 }
 
 /*$gutter-width: $base-line-height / 2;*/
+@font-face {
+  font-family: 'socialicons';
+  src: url("//static.scholarslab.org/fonts/socialicons/socialicons.eot");
+  src: url("//static.scholarslab.org/fonts/socialicons/socialicons.eot?#iefix") format("embedded-opentype"), url("//static.scholarslab.org/fonts/socialicons/socialicons.woff") format("woff"), url("//static.scholarslab.org/fonts/socialicons/socialicons.ttf") format("truetype"), url("//static.scholarslab.org/fonts/socialicons/socialicons.svg#socialicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media screen {
   * {
     -webkit-box-sizing: border-box;
@@ -964,6 +972,56 @@ table {
     line-height: 2.25em;
     margin-top: 2.25em;
     margin-bottom: 2.25em;
+  }
+
+  .elsewhere {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .elsewhere li {
+    display: inline;
+  }
+
+  .elsewhere a {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    vertical-align: sub !important;
+  }
+
+  .elsewhere a:before {
+    font-size: 80px !important;
+    line-height: 80px;
+    font-family: 'socialicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .google:before {
+    content: "\2b";
+  }
+
+  .github:before {
+    content: "\67";
+  }
+
+  .twitter:before {
+    content: "\74";
+  }
+
+  .facebook:before {
+    content: "\66";
+  }
+
+  .vimeo:before {
+    content: "\76";
   }
 }
 @media print {

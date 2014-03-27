@@ -562,3 +562,48 @@ footer[role=contentinfo] {
         @include trailer(1,16px);
     }
 }
+
+.elsewhere {
+  margin-left:0;
+  padding-left:0;
+  list-style:none;
+
+  text-align:center;
+  li {
+      display:inline;
+  }
+}
+
+.elsewhere a {
+  @include squish-text();
+  vertical-align:sub !important;
+}
+
+.elsewhere a:before {
+  font-size: 80px !important;
+  line-height: 80px;
+  font-family: 'socialicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(white,0.5);
+}
+
+.google:before {
+  content: "\2b";
+}
+.github:before {
+  content: "\67";
+}
+.twitter:before {
+  content: "\74";
+}
+.facebook:before {
+  content: "\66";
+}
+.vimeo:before {
+  content: "\76";
+}
