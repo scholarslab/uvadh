@@ -1,13 +1,12 @@
 $(document).ready(function() {
 
     var $w = $(window);
-    var $scrollTop = $w.scrollTop();
 
     var $banner = $('#banner');
     var $bannerHeight = $banner.height();
     var $articleHeader = $('article > header');
 
-    $w.scroll( function() {
+    var refigure = function() {
 
 		$scrollTop = $w.scrollTop();
 
@@ -28,7 +27,11 @@ $(document).ready(function() {
             }
         );
 
-	});
+	};
+
+    refigure();
+
+    $w.scroll(refigure);
+
 
 });
-
