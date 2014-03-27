@@ -293,11 +293,9 @@ hr {
 
 .gallery {
     display:block;
-    padding:0 !important;
     @include clearfix;
     clear:both;
     background-color: $base-color-darker;
-    @include bleed();
     padding:0;
     ul {
         list-style:none;
@@ -459,41 +457,15 @@ main {
 }
 
 section {
-    background-color: #fff;
     @include bleed;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat:no-repeat;
+    @include pad(4,4);
     padding-top: rhythm(2);
     padding-bottom: rhythm(2);
-
-    > * {
-        @include pad(2,2);
-    }
-
-    &:before {
-        display:none;
-        content: " ";
-        @include bleed;
-        padding-top: 400px;
-        @include background-image(
-            url(http://farm4.staticflickr.com/3712/9759198186_171d49218e_h.jpg)
-        );
-        background-color: darken($base-color, 40);
-        background-attachment: local;
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position:inherit;
-        @include box-shadow(inset 0 0 200px rgba(black, 0.75));
-    }
-
+    background-color: #fff;
     h1 {
         margin-top:0;
     }
 
-    &:nth-child(2n) {
-        background: desaturate(lighten($complementary-color, 70%), 50);
-    }
 }
 
 figure {
@@ -538,6 +510,15 @@ figure {
 #categories {
     padding-top:0;
     padding-bottom:0;
+    @include clearfix;
+    background-color: white;
+    @include susy-grid-background;
+    
+}
+
+#contact {
+    background-color: lighten($complementary-color, 10%);
+    color: #fff;
 }
 
 .profile main header {
