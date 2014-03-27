@@ -1,37 +1,33 @@
-$(document).ready(function() {
+var $w = $(window);
 
-    var $w = $(window);
+var $banner = $('#banner');
+var $bannerHeight = $banner.height();
+var $articleHeader = $('article > header');
 
-    var $banner = $('#banner');
-    var $bannerHeight = $banner.height();
-    var $articleHeader = $('article > header');
+var refigure = function() {
 
-    var refigure = function() {
+    $scrollTop = $w.scrollTop();
 
-		$scrollTop = $w.scrollTop();
+    var $yOffset = $scrollTop/2;
+    var $opacityOffset = ($bannerHeight - $yOffset) / $bannerHeight;
+    var $position = '50% -' + $yOffset + 'px';
 
-		var $yOffset = $scrollTop/2;
-        var $opacityOffset = ($bannerHeight - $yOffset) / $bannerHeight;
-        var $position = '50% -' + $yOffset + 'px';
+    $banner.css(
+        {
+            transform: "translateY(" + $yOffset + "px)",
+            opacity: $opacityOffset
+        }
+    );
 
-		$banner.css(
-		    {
-		        transform: "translateY(" + $yOffset + "px)",
-		        opacity: $opacityOffset
-		    }
-		);
+    $articleHeader.css(
+        { 
+            backgroundPosition: $position
+        }
+    );
 
-		$articleHeader.css(
-            { 
-                backgroundPosition: $position
-            }
-        );
+};
 
-	};
+refigure();
 
-    refigure();
+$w.scroll(refigure);
 
-    $w.scroll(refigure);
-
-
-});
