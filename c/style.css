@@ -802,7 +802,7 @@ table {
 
   #uva-link {
     text-align: center;
-    margin: 0 auto 4em;
+    margin: 0 auto 2em;
     display: block;
   }
   #uva-link .rotunda {
@@ -830,6 +830,8 @@ table {
   }
   header[role=banner] h1 {
     margin: 0;
+    font-size: 1em;
+    line-height: 2em;
   }
   header[role=banner] h1 abbr {
     border: none;
@@ -837,6 +839,10 @@ table {
   }
   header[role=banner] h1:before {
     display: none;
+  }
+  .home header[role=banner] h1 {
+    font-size: 3em;
+    line-height: 1.33333em;
   }
   header[role=banner] a {
     text-decoration: none;

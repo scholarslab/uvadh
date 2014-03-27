@@ -393,7 +393,7 @@ hr {
 
 #uva-link {
     text-align:center;
-    margin: 0 auto rhythm(2);
+    margin: 0 auto rhythm(1);
     display:block;
 
     .rotunda {
@@ -425,11 +425,15 @@ header[role=banner] {
             border:none;
             font-variant:small-caps;
         }
+        @include adjust-font-size-to(18px);
 
         &:before {
             display:none;
         }
 
+        .home & {
+            @include adjust-font-size-to(54px);
+        }
     }
 
     a {
