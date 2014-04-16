@@ -745,11 +745,6 @@ table {
     margin: 0;
   }
   .gallery li {
-    float: left;
-    width: 33.33333%;
-    float: left;
-    margin-right: 0%;
-    display: inline;
     margin-bottom: 0;
     background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg);
     background-size: cover;
@@ -959,6 +954,7 @@ table {
   }
 
   footer[role=contentinfo] {
+    padding: 2em 0;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
@@ -971,8 +967,11 @@ table {
     font-size: 0.88889em;
     line-height: 2.25em;
     line-height: 2.25em;
-    margin-top: 2.25em;
-    margin-bottom: 2.25em;
+    margin: 0;
+  }
+  footer[role=contentinfo] a {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   .elsewhere {
@@ -1028,6 +1027,27 @@ table {
 
   .vimeo:before {
     content: "\76";
+  }
+}
+@media screen and (min-width: 700px) {
+  footer[role=contentinfo]:before, footer[role=contentinfo]:after {
+    content: " ";
+    display: table;
+    width: 100%;
+  }
+  footer[role=contentinfo] p {
+    width: 50%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
+  }
+  footer[role=contentinfo] p:last-child {
+    width: 50%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline;
+    text-align: right;
   }
 }
 @media print {

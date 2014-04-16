@@ -304,8 +304,6 @@ hr {
     }
 
     li {
-        float: left;
-        @include span-columns(6);
         margin-bottom:0;
         @include background(
             url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg)
@@ -551,6 +549,7 @@ article header {
 
 
 footer[role=contentinfo] {
+    padding: rhythm() 0;
     @include bleed;
     color: white;
     color: rgba(white, 0.8);
@@ -559,9 +558,14 @@ footer[role=contentinfo] {
     p {
         @include adjust-font-size-to(16px);
         @include adjust-leading-to(1,16px);
-        @include leader(1,16px);
-        @include trailer(1,16px);
+        margin:0;
     }
+
+    a {
+        color: white;
+        color: rgba(white, 0.8);
+    }
+
 }
 
 .elsewhere {
@@ -613,4 +617,23 @@ footer[role=contentinfo] {
 }
 .vimeo:before {
   content: "\76";
+}
+
+@media screen and (min-width: 700px) {
+
+    footer[role=contentinfo] {
+        
+        @include clearfix;
+
+        p {
+            @include span-columns(9);
+
+            &:last-child {
+                @include span-columns(9 omega);
+                text-align:right;
+            }
+        }
+    }
+
+
 }
