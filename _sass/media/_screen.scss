@@ -535,6 +535,14 @@ figure {
     h1:before {
         display:none;
     }
+
+    .blurb {
+        text-align:center;
+        font-family: $sans-serif;
+        @include adjust-font-size-to(24px);
+        font-weight: 200;
+    }
+
 }
 
 article header {

@@ -944,6 +944,13 @@ table {
   .profile main header h1:before {
     display: none;
   }
+  .profile main header .blurb {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.33333em;
+    line-height: 1.5em;
+    font-weight: 200;
+  }
 
   article header {
     padding-top: 4em;
