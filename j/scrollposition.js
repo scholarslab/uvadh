@@ -1,6 +1,6 @@
 var $w = $(window);
 
-var $banner = $('#banner');
+var $banner = $('.home #banner');
 var $bannerHeight = $banner.height();
 var $articleHeader = $('article > header');
 

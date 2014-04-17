@@ -1,3 +1,5 @@
+@media screen {
+
 * {
     @include box-sizing(border-box);
 }
@@ -51,7 +53,7 @@ h1,h2 {
     text-transform:uppercase;
     letter-spacing: 3px;
 
-    &:before {
+    main &:before {
         display:block;
         width: column(12);
         height: 5px;
@@ -63,8 +65,8 @@ h1,h2 {
 }
 
 h1 {
-    @include adjust-font-size-to(54px);
-    @include adjust-leading-to(2,54px);
+    @include adjust-font-size-to(36px);
+    @include adjust-leading-to(1,36px);
 }
 
 h2 {
@@ -274,7 +276,7 @@ hr {
 }
 
 .rotunda {
-    display:block;
+    display:inline-block;
     width: rhythm(1.5);
     height: rhythm(1.5);
     @include border-radius(rhythm(.75));
@@ -390,49 +392,32 @@ hr {
     }
 }
 
-#uva-link {
-    text-align:center;
-    margin: 0 auto rhythm(1);
-    display:block;
-
-    .rotunda {
-        margin:0 auto rhythm(0.5);
-    }
-}
-
 header[role=banner] {
     z-index:1;
     display:block;
     position:relative;
+    text-align:center;
     @include bleed();
-    padding: rhythm(1) gutter(12);
-
-    .home & {
-        padding: rhythm(4) gutter(12);
-    }
-
+    padding: rhythm(0.5) gutter(12);
     @include background(
         linear-gradient(left, color-stops(transparent, rgba(white, 0.05))),
         $complementary-color
     );
-    
     background-size: 50% 100px, auto;
 
     h1 {
-        margin:0;
-        abbr {
-            border:none;
-            font-variant:small-caps;
-        }
-        @include adjust-font-size-to(18px);
+        margin:0;       
+        @include adjust-font-size-to(20px);
 
         &:before {
             display:none;
         }
 
-        .home & {
-            @include adjust-font-size-to(54px);
+        abbr {
+            border:none;
+            font-variant:small-caps;
         }
+
     }
 
     a {
@@ -452,6 +437,21 @@ header[role=banner] {
             color: white;
         }
     }
+
+        padding: rhythm(1) gutter(12);
+        
+        .rotunda {
+            display:block;
+            margin:rhythm(0.5) auto;
+            float:none;
+        }
+
+        #uvalink {
+            text-align:center;
+            margin: 0 auto rhythm(1);
+            display:block;
+        }
+
 }
 
 main {
@@ -461,9 +461,10 @@ main {
 
 section {
     @include bleed;
-    padding-top: rhythm(2);
-    padding-bottom: rhythm(2);
+
+    padding: rhythm();
     background-color: #fff;
+
     h1 {
         margin-top:0;
     }
@@ -488,13 +489,14 @@ figure {
 
         p {
             margin:0;
-            @include pad(2,2);
+            @include pad(1,1);
         }
 
     }
 }
 
 #introduction {
+
     h1 {
         @extend .visuallyhidden;
         margin:0;
@@ -502,8 +504,8 @@ figure {
 
     p {
         margin:0;
-        @include adjust-font-size-to(36px);
-        @include adjust-leading-to(2,36px);
+        @include adjust-font-size-to(20px);
+        @include adjust-leading-to(1,20px);
         font-style:italic;
         text-align:center;
     }
@@ -522,6 +524,7 @@ figure {
 
 .profile main header {
     @include bleed;
+    padding: rhythm() gutter();
     @include background(
         url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat
     );
@@ -627,7 +630,94 @@ footer[role=contentinfo] {
     content: "\76";
 }
 
-@media screen and (min-width: 600px) {
+}
+
+@media (min-width: 600px) {
+
+    h1 {
+        @include adjust-font-size-to(54px);
+        @include adjust-leading-to(2, 54px);
+    }
+
+    header[role=banner] {
+        @include bleed;
+
+        .home & {
+            padding-top: rhythm(3);
+            padding-bottom: rhythm(3);
+        }
+
+        h1 {
+            margin:0;
+            position:absolute;
+            right: 50%;
+            text-align:right;
+            @include adjust-font-size-to(20px);
+            @include adjust-leading-to(1.5, 20px);   
+            padding-right: rhythm(1.5,20px);
+
+            .home & {
+                position:static;
+                text-align:center;
+                padding:0;
+                @include adjust-font-size-to(54px);
+            }
+
+        }
+
+        #uvalink {
+            margin:0;
+            float:none;
+        }
+
+        .rotunda {
+            display:inline-block;
+            margin:0;
+
+            .home & {
+                display:block;
+                margin: rhythm(1) auto;
+            }
+        }
+
+        .uva-logotype {
+            position:absolute;
+            left: 50%;
+            padding-left: rhythm(1.5);
+            @include adjust-leading-to(1.5);
+
+            img {
+                vertical-align:middle;
+            }
+
+            .home & {
+                position:static;
+                text-align:center;
+                padding:0;
+            }
+
+        }
+    }
+
+    .profile main header {
+        @include bleed;
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+
+    }
+
+    section {
+        @include bleed;
+        padding-top: rhythm(2);
+        padding-bottom: rhythm(2);
+    }
+
+    #introduction {
+        p {
+            @include adjust-font-size-to(32px);
+            @include adjust-leading-to(2,32px);
+        }
+    }
 
     .gallery li {
         @include span-columns(9);
@@ -649,10 +739,37 @@ footer[role=contentinfo] {
 
 }
 
-@media screen and (min-width: 900px) {
+
+@media (min-width: 600px) and (min-height: 500px) {
+
+    body {
+        padding-top: rhythm(2.5);
+
+        &.home {
+            padding-top:0;
+        }
+    }
+
+    header[role=banner] {
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index:1000;
+
+        .home & {
+            position:static;
+            z-index:auto;
+        }
+    }
+}
+
+@media (min-width: 900px) {
 
     .gallery li {
         @include span-columns(6);
     }
 
 }
+
+

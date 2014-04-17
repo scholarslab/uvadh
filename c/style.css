@@ -497,7 +497,7 @@ table {
     text-transform: uppercase;
     letter-spacing: 3px;
   }
-  h1:before, h2:before {
+  main h1:before, main h2:before {
     display: block;
     width: 8.33333%;
     height: 5px;
@@ -507,9 +507,9 @@ table {
   }
 
   h1 {
-    font-size: 3em;
-    line-height: 1.33333em;
-    line-height: 1.33333em;
+    font-size: 2em;
+    line-height: 2em;
+    line-height: 1em;
   }
 
   h2 {
@@ -708,7 +708,7 @@ table {
   }
 
   .rotunda {
-    display: block;
+    display: inline-block;
     width: 3em;
     height: 3em;
     -webkit-border-radius: 1.5em;
@@ -804,49 +804,35 @@ table {
     line-height: 1.28571em;
   }
 
-  #uva-link {
-    text-align: center;
-    margin: 0 auto 2em;
-    display: block;
-  }
-  #uva-link .rotunda {
-    margin: 0 auto 1em;
-  }
-
   header[role=banner] {
     z-index: 1;
     display: block;
     position: relative;
+    text-align: center;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    padding: 2em 0%;
+    padding: 1em 0%;
     background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, rgba(255, 255, 255, 0.05))), #004666;
     background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background-size: 50% 100px, auto;
-  }
-  .home header[role=banner] {
-    padding: 8em 0%;
+    padding: 2em 0%;
   }
   header[role=banner] h1 {
     margin: 0;
-    font-size: 1em;
-    line-height: 2em;
-  }
-  header[role=banner] h1 abbr {
-    border: none;
-    font-variant: small-caps;
+    font-size: 1.11111em;
+    line-height: 1.8em;
   }
   header[role=banner] h1:before {
     display: none;
   }
-  .home header[role=banner] h1 {
-    font-size: 3em;
-    line-height: 1.33333em;
+  header[role=banner] h1 abbr {
+    border: none;
+    font-variant: small-caps;
   }
   header[role=banner] a {
     text-decoration: none;
@@ -860,6 +846,16 @@ table {
   header[role=banner] a:active {
     color: white;
   }
+  header[role=banner] .rotunda {
+    display: block;
+    margin: 1em auto;
+    float: none;
+  }
+  header[role=banner] #uvalink {
+    text-align: center;
+    margin: 0 auto 2em;
+    display: block;
+  }
 
   main {
     z-index: 100;
@@ -871,8 +867,7 @@ table {
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding: 2em;
     background-color: #fff;
   }
   section h1 {
@@ -898,8 +893,8 @@ table {
   }
   figure.quote p {
     margin: 0;
-    padding-left: 11.11111%;
-    padding-right: 11.11111%;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%;
   }
 
   #introduction h1 {
@@ -907,9 +902,9 @@ table {
   }
   #introduction p {
     margin: 0;
-    font-size: 2em;
-    line-height: 2em;
-    line-height: 2em;
+    font-size: 1.11111em;
+    line-height: 1.8em;
+    line-height: 1.8em;
     font-style: italic;
     text-align: center;
   }
@@ -934,6 +929,7 @@ table {
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
+    padding: 2em 0%;
     background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background-color: black;
     background-size: cover;
@@ -1035,6 +1031,90 @@ table {
   }
 }
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.33333em;
+    line-height: 1.33333em;
+  }
+
+  header[role=banner] {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+  }
+  .home header[role=banner] {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  header[role=banner] h1 {
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    text-align: right;
+    font-size: 1.11111em;
+    line-height: 1.8em;
+    line-height: 2.7em;
+    padding-right: 2.7em;
+  }
+  .home header[role=banner] h1 {
+    position: static;
+    text-align: center;
+    padding: 0;
+    font-size: 3em;
+    line-height: 1.33333em;
+  }
+  header[role=banner] #uvalink {
+    margin: 0;
+    float: none;
+  }
+  header[role=banner] .rotunda {
+    display: inline-block;
+    margin: 0;
+  }
+  .home header[role=banner] .rotunda {
+    display: block;
+    margin: 2em auto;
+  }
+  header[role=banner] .uva-logotype {
+    position: absolute;
+    left: 50%;
+    padding-left: 3em;
+    line-height: 3em;
+  }
+  header[role=banner] .uva-logotype img {
+    vertical-align: middle;
+  }
+  .home header[role=banner] .uva-logotype {
+    position: static;
+    text-align: center;
+    padding: 0;
+  }
+
+  .profile main header {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  section {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  #introduction p {
+    font-size: 1.77778em;
+    line-height: 1.125em;
+    line-height: 2.25em;
+  }
+
   .gallery li {
     width: 50%;
     float: left;
@@ -1060,6 +1140,26 @@ table {
     *margin-left: 0px;
     display: inline;
     text-align: right;
+  }
+}
+@media screen and (min-width: 600px) and (min-height: 500px) {
+  body {
+    padding-top: 5em;
+  }
+  body.home {
+    padding-top: 0;
+  }
+
+  header[role=banner] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .home header[role=banner] {
+    position: static;
+    z-index: auto;
   }
 }
 @media screen and (min-width: 900px) {
