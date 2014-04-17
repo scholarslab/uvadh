@@ -619,7 +619,11 @@ footer[role=contentinfo] {
   content: "\76";
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+
+    .gallery li {
+        @include span-columns(9);
+    }
 
     footer[role=contentinfo] {
         
@@ -635,5 +639,12 @@ footer[role=contentinfo] {
         }
     }
 
+}
+
+@media screen and (min-width: 900px) {
+
+    .gallery li {
+        @include span-columns(6);
+    }
 
 }

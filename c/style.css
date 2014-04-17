@@ -1029,7 +1029,14 @@ table {
     content: "\76";
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+  .gallery li {
+    width: 50%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
+  }
+
   footer[role=contentinfo]:before, footer[role=contentinfo]:after {
     content: " ";
     display: table;
@@ -1048,6 +1055,14 @@ table {
     *margin-left: 0px;
     display: inline;
     text-align: right;
+  }
+}
+@media screen and (min-width: 900px) {
+  .gallery li {
+    width: 33.33333%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
   }
 }
 @media print {
