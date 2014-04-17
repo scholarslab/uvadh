@@ -409,6 +409,14 @@ table {
 }
 
 /*$gutter-width: $base-line-height / 2;*/
+@font-face {
+  font-family: 'socialicons';
+  src: url("//static.scholarslab.org/fonts/socialicons/socialicons.eot");
+  src: url("//static.scholarslab.org/fonts/socialicons/socialicons.eot?#iefix") format("embedded-opentype"), url("//static.scholarslab.org/fonts/socialicons/socialicons.woff") format("woff"), url("//static.scholarslab.org/fonts/socialicons/socialicons.ttf") format("truetype"), url("//static.scholarslab.org/fonts/socialicons/socialicons.svg#socialicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media screen {
   * {
     -webkit-box-sizing: border-box;
@@ -489,7 +497,7 @@ table {
     text-transform: uppercase;
     letter-spacing: 3px;
   }
-  h1:before, h2:before {
+  main h1:before, main h2:before {
     display: block;
     width: 8.33333%;
     height: 5px;
@@ -499,9 +507,9 @@ table {
   }
 
   h1 {
-    font-size: 3em;
-    line-height: 1.33333em;
-    line-height: 1.33333em;
+    font-size: 2em;
+    line-height: 2em;
+    line-height: 1em;
   }
 
   h2 {
@@ -700,7 +708,7 @@ table {
   }
 
   .rotunda {
-    display: block;
+    display: inline-block;
     width: 3em;
     height: 3em;
     -webkit-border-radius: 1.5em;
@@ -722,13 +730,8 @@ table {
 
   .gallery {
     display: block;
-    padding: 0 !important;
     clear: both;
     background-color: #662000;
-    margin-left: -72px;
-    padding-left: 72px;
-    margin-right: -72px;
-    padding-right: 72px;
     padding: 0;
   }
   .gallery:before, .gallery:after {
@@ -742,11 +745,6 @@ table {
     margin: 0;
   }
   .gallery li {
-    float: left;
-    width: 33.33333%;
-    float: left;
-    margin-right: 0%;
-    display: inline;
     margin-bottom: 0;
     background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg);
     background-size: cover;
@@ -779,6 +777,7 @@ table {
     vertical-align: bottom;
     background: rgba(25, 61, 77, 0.75);
     color: #fff;
+    outline: 0;
     padding: 2em 2em 8em;
     max-height: 12em;
   }
@@ -788,8 +787,8 @@ table {
   .gallery a h2 {
     margin: 0;
     font-style: normal;
-    font-size: 1.77778em;
-    line-height: 1.125em;
+    font-size: 1.55556em;
+    line-height: 1.28571em;
     color: white;
     text-align: inherit;
   }
@@ -802,42 +801,38 @@ table {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.77778em;
     line-height: 2.57143em;
-  }
-
-  #uva-link {
-    text-align: center;
-    margin: 0 auto 4em;
-    display: block;
-  }
-  #uva-link .rotunda {
-    margin: 0 auto 1em;
+    line-height: 1.28571em;
   }
 
   header[role=banner] {
+    z-index: 1;
     display: block;
+    position: relative;
+    text-align: center;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    padding: 2em 0%;
+    padding: 1em 0%;
     background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, rgba(255, 255, 255, 0.05))), #004666;
     background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background: linear-gradient(left, transparent, rgba(255, 255, 255, 0.05)), #004666;
     background-size: 50% 100px, auto;
-  }
-  .home header[role=banner] {
-    padding: 8em 0%;
+    padding: 2em 0%;
   }
   header[role=banner] h1 {
     margin: 0;
-  }
-  header[role=banner] h1 abbr {
-    border: none;
+    font-size: 1.11111em;
+    line-height: 1.8em;
   }
   header[role=banner] h1:before {
     display: none;
+  }
+  header[role=banner] h1 abbr {
+    border: none;
+    font-variant: small-caps;
   }
   header[role=banner] a {
     text-decoration: none;
@@ -851,46 +846,32 @@ table {
   header[role=banner] a:active {
     color: white;
   }
+  header[role=banner] .rotunda {
+    display: block;
+    margin: 1em auto;
+    float: none;
+  }
+  header[role=banner] #uvalink {
+    text-align: center;
+    margin: 0 auto 2em;
+    display: block;
+  }
+
+  main {
+    z-index: 100;
+    position: relative;
+  }
 
   section {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding: 2em;
     background-color: #fff;
-    margin-left: -72px;
-    padding-left: 72px;
-    margin-right: -72px;
-    padding-right: 72px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 4em;
-    padding-bottom: 4em;
-  }
-  section > * {
-    padding-left: 11.11111%;
-    padding-right: 11.11111%;
-  }
-  section:before {
-    display: none;
-    content: " ";
-    margin-left: -72px;
-    padding-left: 72px;
-    margin-right: -72px;
-    padding-right: 72px;
-    padding-top: 400px;
-    background-image: url(http://farm4.staticflickr.com/3712/9759198186_171d49218e_h.jpg);
-    background-color: black;
-    background-attachment: local;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: inherit;
-    -webkit-box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.75);
   }
   section h1 {
     margin-top: 0;
-  }
-  section:nth-child(2n) {
-    background: #d9eaf2;
   }
 
   figure.quote {
@@ -912,8 +893,8 @@ table {
   }
   figure.quote p {
     margin: 0;
-    padding-left: 11.11111%;
-    padding-right: 11.11111%;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%;
   }
 
   #introduction h1 {
@@ -921,16 +902,26 @@ table {
   }
   #introduction p {
     margin: 0;
-    font-size: 2em;
-    line-height: 2em;
-    line-height: 2em;
+    font-size: 1.11111em;
+    line-height: 1.8em;
+    line-height: 1.8em;
     font-style: italic;
     text-align: center;
   }
 
   #categories {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    background-color: #006999;
+  }
+  #categories:before, #categories:after {
+    content: " ";
+    display: table;
+    width: 100%;
+  }
+
+  #contact {
+    background-color: #006999;
+    color: #fff;
   }
 
   .profile main header {
@@ -938,19 +929,23 @@ table {
     padding-left: 72px;
     margin-right: -72px;
     padding-right: 72px;
-    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, transparent)) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -moz-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: -o-linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background: linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 50%, transparent 100%) bottom left no-repeat, url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
+    padding: 2em 0%;
+    background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
     background-color: black;
-    background-size: auto, cover;
-    background-position: inherit;
+    background-size: cover;
+    background-position: 50% 0;
     color: #fff;
     color: rgba(255, 255, 255, 0.8);
   }
   .profile main header h1:before {
     display: none;
+  }
+  .profile main header .blurb {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.33333em;
+    line-height: 1.5em;
+    font-weight: 200;
   }
 
   article header {
@@ -962,6 +957,7 @@ table {
   }
 
   footer[role=contentinfo] {
+    padding: 2em 0;
     margin-left: -72px;
     padding-left: 72px;
     margin-right: -72px;
@@ -974,8 +970,204 @@ table {
     font-size: 0.88889em;
     line-height: 2.25em;
     line-height: 2.25em;
-    margin-top: 2.25em;
-    margin-bottom: 2.25em;
+    margin: 0;
+  }
+  footer[role=contentinfo] a {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .elsewhere {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .elsewhere li {
+    display: inline;
+  }
+  .elsewhere a {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    vertical-align: sub !important;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+  }
+  .elsewhere a:hover, .elsewhere a:active {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .elsewhere a:before {
+    font-size: 80px !important;
+    line-height: 80px;
+    font-family: 'socialicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+  }
+
+  .google:before {
+    content: "\2b";
+  }
+
+  .github:before {
+    content: "\67";
+  }
+
+  .twitter:before {
+    content: "\74";
+  }
+
+  .facebook:before {
+    content: "\66";
+  }
+
+  .vimeo:before {
+    content: "\76";
+  }
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.33333em;
+    line-height: 1.33333em;
+  }
+
+  header[role=banner] {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+  }
+  .home header[role=banner] {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  header[role=banner] h1 {
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    text-align: right;
+    font-size: 1.11111em;
+    line-height: 1.8em;
+    line-height: 2.7em;
+    padding-right: 2.7em;
+  }
+  .home header[role=banner] h1 {
+    position: static;
+    text-align: center;
+    padding: 0;
+    font-size: 3em;
+    line-height: 1.33333em;
+  }
+  header[role=banner] #uvalink {
+    margin: 0;
+    float: none;
+  }
+  header[role=banner] .rotunda {
+    display: inline-block;
+    margin: 0;
+  }
+  .home header[role=banner] .rotunda {
+    display: block;
+    margin: 2em auto;
+  }
+  header[role=banner] .uva-logotype {
+    position: absolute;
+    left: 50%;
+    padding-left: 3em;
+    line-height: 3em;
+  }
+  header[role=banner] .uva-logotype img {
+    vertical-align: middle;
+  }
+  .home header[role=banner] .uva-logotype {
+    position: static;
+    text-align: center;
+    padding: 0;
+  }
+
+  .profile main header {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  section {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  #introduction p {
+    font-size: 1.77778em;
+    line-height: 1.125em;
+    line-height: 2.25em;
+  }
+
+  .gallery li {
+    width: 50%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
+  }
+
+  footer[role=contentinfo]:before, footer[role=contentinfo]:after {
+    content: " ";
+    display: table;
+    width: 100%;
+  }
+  footer[role=contentinfo] p {
+    width: 50%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
+  }
+  footer[role=contentinfo] p:last-child {
+    width: 50%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 600px) and (min-height: 500px) {
+  body {
+    padding-top: 5em;
+  }
+  body.home {
+    padding-top: 0;
+  }
+
+  header[role=banner] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .home header[role=banner] {
+    position: static;
+    z-index: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .gallery li {
+    width: 33.33333%;
+    float: left;
+    margin-right: 0%;
+    display: inline;
   }
 }
 @media print {
