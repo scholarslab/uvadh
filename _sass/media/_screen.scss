@@ -546,7 +546,6 @@ figure {
 }
 
 article header {
-    
     padding-top: rhythm(2);
     padding-bottom: rhythm(4);
 
@@ -577,54 +576,55 @@ footer[role=contentinfo] {
 }
 
 .elsewhere {
-  margin-left:0;
-  padding-left:0;
-  list-style:none;
+    margin-left:0;
+    padding-left:0;
+    list-style:none;
+    text-align:center;
 
-  text-align:center;
-  li {
+    li {
       display:inline;
-  }
-}
+    }
 
-.elsewhere a {
-  @include squish-text();
-  vertical-align:sub !important;
-  color: rgba(white,0.5);
-  text-decoration:none;
+    a {
+        @include squish-text();
+        vertical-align:sub !important;
+        color: rgba(white,0.5);
+        text-decoration:none;
 
-  &:hover, &:active {
-    color: rgba(white,0.75);
-  }
-}
+        &:hover, &:active {
+            color: rgba(white,0.75);
+        }
 
-.elsewhere a:before {
-  font-size: 80px !important;
-  line-height: 80px;
-  font-family: 'socialicons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  text-decoration:none;
+        &:before {
+          font-size: 80px !important;
+          line-height: 80px;
+          font-family: 'socialicons';
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          text-decoration:none;
+        }
+    }
+
 }
 
 .google:before {
-  content: "\2b";
+    content: "\2b";
 }
 .github:before {
-  content: "\67";
+    content: "\67";
 }
 .twitter:before {
-  content: "\74";
+    content: "\74";
 }
 .facebook:before {
-  content: "\66";
+    content: "\66";
 }
 .vimeo:before {
-  content: "\76";
+    content: "\76";
 }
 
 @media screen and (min-width: 600px) {
