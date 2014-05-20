@@ -331,16 +331,19 @@ hr {
             }
             margin:0;
             font-style:normal;
-            @include adjust-font-size-to(28px);
+            font-weight:700;
+            @include adjust-font-size-to(24px);
+            @include adjust-leading-to(.75,24px);
             color:white;
             text-align:inherit;
         }
         p {
             margin:0;
             color: white;
-            color: rgba(white, 0.8);
+            color: rgba(white, 0.75);
+            font-style:italic;
             @include adjust-font-size-to(14px);
-            @include adjust-leading-to(0.5,14px);
+            @include adjust-leading-to(0.75,14px);
         }
     }
 }
@@ -744,6 +747,13 @@ footer[role=contentinfo] {
 
     .gallery li {
         @include span-columns(6);
+    }
+
+    .profile main header {
+        @include bleed;
+        padding-top: rhythm(4);
+        padding-bottom: rhythm(4);
+
     }
 
 }

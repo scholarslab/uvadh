@@ -765,8 +765,10 @@ table {
   .gallery a h2 {
     margin: 0;
     font-style: normal;
-    font-size: 1.55556em;
-    line-height: 1.28571em;
+    font-weight: 700;
+    font-size: 1.33333em;
+    line-height: 1.5em;
+    line-height: 1.125em;
     color: white;
     text-align: inherit;
   }
@@ -776,10 +778,11 @@ table {
   .gallery a p {
     margin: 0;
     color: white;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
     font-size: 0.77778em;
     line-height: 2.57143em;
-    line-height: 1.28571em;
+    line-height: 1.92857em;
   }
 
   .profile main header {
@@ -1234,6 +1237,15 @@ table {
     float: left;
     margin-right: 0%;
     display: inline;
+  }
+
+  .profile main header {
+    margin-left: -72px;
+    padding-left: 72px;
+    margin-right: -72px;
+    padding-right: 72px;
+    padding-top: 8em;
+    padding-bottom: 8em;
   }
 }
 @media print {
