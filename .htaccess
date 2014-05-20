@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "DH at UVA"
 AuthUserFile /usr/local/projects/uvadh/shared/passwords
-require user valid-user
+require user slab
