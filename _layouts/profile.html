@@ -5,11 +5,35 @@ bodyclass: profile
 
 <article>
     <header>
-        <h1>{{ page.title }}</h1>
+        <h1>
+            {% if page.elsewhere.website %}
+            <a href="{{page.elsewhere.website}}">
+            {% endif %}
+
+            {{ page.title }}
+
+            {% if page.elsewhere.website %}
+            </a>
+            {% endif %}
+
+        </h1>
         <p class="blurb">{{ page.blurb }}</p>
     </header>
 
     <div class="content">
-    {{ content }}
+
+        {{ content }}
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <ul class="elsewhere">
+                {% for elsewhere in page.elsewhere %}
+                    {% for link in elsewhere %}
+                    <li><a class="{{ link[0] }}" href="{{ link[1] }}">{{ link[0] }}</a></li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </section>
+
     </div>
 </article>
