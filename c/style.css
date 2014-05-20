@@ -1006,6 +1006,10 @@ table {
     color: #fff;
     color: rgba(255, 255, 255, 0.95);
   }
+  .profile main header a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.95);
+  }
   .profile main header h1:before {
     display: none;
   }

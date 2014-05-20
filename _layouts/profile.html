@@ -27,10 +27,8 @@ bodyclass: profile
         <section id="contact">
             <h1>Contact</h1>
             <ul class="elsewhere">
-                {% for elsewhere in page.elsewhere %}
-                    {% for link in elsewhere %}
+                {% for link in page.elsewhere %}
                     <li><a class="{{ link[0] }}" href="{{ link[1] }}">{{ link[0] }}</a></li>
-                    {% endfor %}
                 {% endfor %}
             </ul>
         </section>
