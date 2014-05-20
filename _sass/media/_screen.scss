@@ -275,7 +275,7 @@ hr {
     @extend .visuallyhidden;
 }
 
-.rotunda {
+.rotunda-icon {
     display:inline-block;
     width: rhythm(1.5);
     height: rhythm(1.5);
@@ -307,54 +307,7 @@ hr {
 
     li {
         margin-bottom:0;
-        @include background(
-            url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg)
-        );
-
-        background-size:cover;        
-
-        &:nth-child(2n) {
-            @include background-image(
-                url(http://farm5.staticflickr.com/4059/4572580724_881dee4395_z.jpg)
-            );
-        }
-
-        &:nth-child(3n) {
-            @include background-image(
-                url(http://farm5.staticflickr.com/4034/4572592006_54e54ee883_z.jpg)
-            );
-        }
-
-        &:nth-child(2n) {
-            @include background-image(
-                url(http://farm4.staticflickr.com/3745/10510409804_beb855d5eb_h.jpg)
-            );
-        }
-
-        &:nth-child(3n) {
-            @include background-image(
-                url(http://farm6.staticflickr.com/5502/10510360734_1779edabad_h.jpg)
-            );
-
-        }
-        &:nth-child(4n) {
-            @include background-image(
-                url(http://farm6.staticflickr.com/5485/10510343255_39ee93be2e_h.jpg)
-            );
-
-        }
-
-        &:nth-child(5n) {
-            @include background-image(
-                url(http://farm3.staticflickr.com/2877/10510649343_6accef8c17_h.jpg)
-            );
-        }
-        &:nth-child(6n) {
-            @include background-image(
-                url(http://farm4.staticflickr.com/3745/10510409804_beb855d5eb_h.jpg)
-            );
-        }
-
+        background-size:cover;
     }
 
     a {
@@ -391,6 +344,22 @@ hr {
         }
     }
 }
+
+// Organization backgrounds
+$orglist: shanti scholars-lab iath history-and-futures-of-the-book virginia-center-for-computer-music uva-library-services virginia-foundation-for-the-humanities rotunda center-for-data-ethics-law-and-policy;
+
+@each $org in $orglist {
+
+    .#{$org},
+    .#{$org} main header
+    {        
+        @include background-image(
+            url("/i/#{$org}.jpg")
+        );
+    }
+
+}
+
 
 header[role=banner] {
     z-index:1;
@@ -525,10 +494,7 @@ figure {
 .profile main header {
     @include bleed;
     padding: rhythm() gutter();
-    @include background(
-        url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat
-    );
-    background-color: darken($base-color, 40);
+    background-color: transparent;
     background-size: cover;
     background-position: 50% 0;
 
@@ -670,7 +636,7 @@ footer[role=contentinfo] {
             float:none;
         }
 
-        .rotunda {
+        .rotunda-icon {
             display:inline-block;
             margin:0;
 

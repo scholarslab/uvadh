@@ -707,7 +707,7 @@ table {
     width: 1px;
   }
 
-  .rotunda {
+  .rotunda-icon {
     display: inline-block;
     width: 3em;
     height: 3em;
@@ -724,7 +724,7 @@ table {
     background-size: 100% 1px, auto;
     padding: 0.7em;
   }
-  .rotunda img {
+  .rotunda-icon img {
     margin-top: -1px;
   }
 
@@ -746,29 +746,7 @@ table {
   }
   .gallery li {
     margin-bottom: 0;
-    background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg);
     background-size: cover;
-  }
-  .gallery li:nth-child(2n) {
-    background-image: url(http://farm5.staticflickr.com/4059/4572580724_881dee4395_z.jpg);
-  }
-  .gallery li:nth-child(3n) {
-    background-image: url(http://farm5.staticflickr.com/4034/4572592006_54e54ee883_z.jpg);
-  }
-  .gallery li:nth-child(2n) {
-    background-image: url(http://farm4.staticflickr.com/3745/10510409804_beb855d5eb_h.jpg);
-  }
-  .gallery li:nth-child(3n) {
-    background-image: url(http://farm6.staticflickr.com/5502/10510360734_1779edabad_h.jpg);
-  }
-  .gallery li:nth-child(4n) {
-    background-image: url(http://farm6.staticflickr.com/5485/10510343255_39ee93be2e_h.jpg);
-  }
-  .gallery li:nth-child(5n) {
-    background-image: url(http://farm3.staticflickr.com/2877/10510649343_6accef8c17_h.jpg);
-  }
-  .gallery li:nth-child(6n) {
-    background-image: url(http://farm4.staticflickr.com/3745/10510409804_beb855d5eb_h.jpg);
   }
   .gallery a {
     display: block;
@@ -802,6 +780,51 @@ table {
     font-size: 0.77778em;
     line-height: 2.57143em;
     line-height: 1.28571em;
+  }
+
+  .shanti,
+  .shanti main header {
+    background-image: url("/i/shanti.jpg");
+  }
+
+  .scholars-lab,
+  .scholars-lab main header {
+    background-image: url("/i/scholars-lab.jpg");
+  }
+
+  .iath,
+  .iath main header {
+    background-image: url("/i/iath.jpg");
+  }
+
+  .history-and-futures-of-the-book,
+  .history-and-futures-of-the-book main header {
+    background-image: url("/i/history-and-futures-of-the-book.jpg");
+  }
+
+  .virginia-center-for-computer-music,
+  .virginia-center-for-computer-music main header {
+    background-image: url("/i/virginia-center-for-computer-music.jpg");
+  }
+
+  .uva-library-services,
+  .uva-library-services main header {
+    background-image: url("/i/uva-library-services.jpg");
+  }
+
+  .virginia-foundation-for-the-humanities,
+  .virginia-foundation-for-the-humanities main header {
+    background-image: url("/i/virginia-foundation-for-the-humanities.jpg");
+  }
+
+  .rotunda,
+  .rotunda main header {
+    background-image: url("/i/rotunda.jpg");
+  }
+
+  .center-for-data-ethics-law-and-policy,
+  .center-for-data-ethics-law-and-policy main header {
+    background-image: url("/i/center-for-data-ethics-law-and-policy.jpg");
   }
 
   header[role=banner] {
@@ -930,8 +953,7 @@ table {
     margin-right: -72px;
     padding-right: 72px;
     padding: 2em 0%;
-    background: url(http://farm4.staticflickr.com/3746/10510531524_2d2e71b132_h.jpg) fixed no-repeat;
-    background-color: black;
+    background-color: transparent;
     background-size: cover;
     background-position: 50% 0;
     color: #fff;
@@ -1068,11 +1090,11 @@ table {
     margin: 0;
     float: none;
   }
-  header[role=banner] .rotunda {
+  header[role=banner] .rotunda-icon {
     display: inline-block;
     margin: 0;
   }
-  .home header[role=banner] .rotunda {
+  .home header[role=banner] .rotunda-icon {
     display: block;
     margin: 2em auto;
   }

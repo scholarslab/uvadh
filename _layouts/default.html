@@ -10,13 +10,13 @@
         <script src="{{site.baseurl}}j/modernizr.min.js"></script>
         <script src="{{site.baseurl}}j/respond.min.js"></script>
     </head>
-    <body class="{{ page.bodyclass }}">
+    <body class="{{ page.bodyclass }} {{ page.title | downcase | replace: "’", "" | replace: " ", "-" }}">
         <a id="skiplink" href="#main">Skip to Main Content</a>
         
         <header role="banner" id="banner">
             <h1><a href="{{site.baseurl}}" id="titlelink">Digital Humanities</a></h1> 
             <a id="uva-link" href="{{site.baseurl}}">
-                <span class="rotunda"><img src="{{site.baseurl}}i/rotunda-white.png" alt=""></span>
+                <span class="rotunda-icon"><img src="{{site.baseurl}}i/rotunda-white.png" alt=""></span>
                 <span class="uva-logotype"><img src="{{site.baseurl}}i/uva-logotype-white.png" alt="University of Virginia logo"></span>
             </a>
         </header>
