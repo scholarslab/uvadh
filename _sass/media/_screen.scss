@@ -361,7 +361,7 @@ $overlay: rgba(desaturate($complementary-color, 50), 0.5);
 
 @each $org in $orglist {
 
-    .#{$org},
+    li.#{$org},
     .#{$org} main header
     {        
         @include background-image(
