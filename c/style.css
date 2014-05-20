@@ -783,52 +783,92 @@ table {
   }
 
   .profile main header {
-    background-image: url("/i/rotunda.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/rotunda.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
   }
 
   .shanti,
   .shanti main header {
-    background-image: url("/i/shanti.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/shanti.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/shanti.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/shanti.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/shanti.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/shanti.jpg");
   }
 
   .scholars-lab,
   .scholars-lab main header {
-    background-image: url("/i/scholars-lab.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/scholars-lab.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/scholars-lab.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/scholars-lab.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/scholars-lab.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/scholars-lab.jpg");
   }
 
   .iath,
   .iath main header {
-    background-image: url("/i/iath.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/iath.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/iath.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/iath.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/iath.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/iath.jpg");
   }
 
   .history-and-futures-of-the-book,
   .history-and-futures-of-the-book main header {
-    background-image: url("/i/history-and-futures-of-the-book.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/history-and-futures-of-the-book.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/history-and-futures-of-the-book.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/history-and-futures-of-the-book.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/history-and-futures-of-the-book.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/history-and-futures-of-the-book.jpg");
   }
 
   .virginia-center-for-computer-music,
   .virginia-center-for-computer-music main header {
-    background-image: url("/i/virginia-center-for-computer-music.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/virginia-center-for-computer-music.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-center-for-computer-music.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-center-for-computer-music.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-center-for-computer-music.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-center-for-computer-music.jpg");
   }
 
   .uva-library-services,
   .uva-library-services main header {
-    background-image: url("/i/uva-library-services.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/uva-library-services.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/uva-library-services.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/uva-library-services.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/uva-library-services.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/uva-library-services.jpg");
   }
 
   .virginia-foundation-for-the-humanities,
   .virginia-foundation-for-the-humanities main header {
-    background-image: url("/i/virginia-foundation-for-the-humanities.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/virginia-foundation-for-the-humanities.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-foundation-for-the-humanities.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-foundation-for-the-humanities.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-foundation-for-the-humanities.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/virginia-foundation-for-the-humanities.jpg");
   }
 
   .rotunda,
   .rotunda main header {
-    background-image: url("/i/rotunda.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/rotunda.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/rotunda.jpg");
   }
 
   .center-for-data-ethics-law-and-policy,
   .center-for-data-ethics-law-and-policy main header {
-    background-image: url("/i/center-for-data-ethics-law-and-policy.jpg");
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(25, 61, 77, 0.5)), color-stop(100%, rgba(25, 61, 77, 0.5))), url("/i/center-for-data-ethics-law-and-policy.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/center-for-data-ethics-law-and-policy.jpg");
+    background-image: -moz-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/center-for-data-ethics-law-and-policy.jpg");
+    background-image: -o-linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/center-for-data-ethics-law-and-policy.jpg");
+    background-image: linear-gradient(left, rgba(25, 61, 77, 0.5), rgba(25, 61, 77, 0.5)), url("/i/center-for-data-ethics-law-and-policy.jpg");
   }
 
   header[role=banner] {
@@ -961,7 +1001,7 @@ table {
     background-size: cover;
     background-position: 50% 0;
     color: #fff;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.95);
   }
   .profile main header h1:before {
     display: none;
@@ -975,7 +1015,7 @@ table {
   }
 
   article header {
-    padding-top: 4em;
+    padding-top: 6em;
     padding-bottom: 8em;
   }
   article header h1 {

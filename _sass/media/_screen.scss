@@ -348,9 +348,11 @@ hr {
 // Organization backgrounds
 $orglist: shanti scholars-lab iath history-and-futures-of-the-book virginia-center-for-computer-music uva-library-services virginia-foundation-for-the-humanities rotunda center-for-data-ethics-law-and-policy;
 
+$overlay: rgba(desaturate($complementary-color, 50), 0.5);
 // Default
 .profile main header {
     @include background-image(
+        linear-gradient(left, $overlay, $overlay),
         url("/i/rotunda.jpg")
     );
 }
@@ -361,6 +363,7 @@ $orglist: shanti scholars-lab iath history-and-futures-of-the-book virginia-cent
     .#{$org} main header
     {        
         @include background-image(
+            linear-gradient(left, $overlay, $overlay),
             url("/i/#{$org}.jpg")
         );
     }
@@ -506,7 +509,7 @@ figure {
     background-position: 50% 0;
 
     color: #fff;
-    color: rgba(white, 0.8);
+    color: rgba(white, 0.95);
 
     h1:before {
         display:none;
@@ -522,7 +525,7 @@ figure {
 }
 
 article header {
-    padding-top: rhythm(2);
+    padding-top: rhythm(3);
     padding-bottom: rhythm(4);
 
     h1 {
