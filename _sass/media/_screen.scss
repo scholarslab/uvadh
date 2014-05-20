@@ -348,6 +348,13 @@ hr {
 // Organization backgrounds
 $orglist: shanti scholars-lab iath history-and-futures-of-the-book virginia-center-for-computer-music uva-library-services virginia-foundation-for-the-humanities rotunda center-for-data-ethics-law-and-policy;
 
+// Default
+.profile main header {
+    @include background-image(
+        url("/i/rotunda.jpg")
+    );
+}
+
 @each $org in $orglist {
 
     .#{$org},

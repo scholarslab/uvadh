@@ -782,6 +782,10 @@ table {
     line-height: 1.28571em;
   }
 
+  .profile main header {
+    background-image: url("/i/rotunda.jpg");
+  }
+
   .shanti,
   .shanti main header {
     background-image: url("/i/shanti.jpg");
