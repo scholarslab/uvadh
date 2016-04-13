@@ -10,61 +10,17 @@ bodyclass: home
 
 <section id="categories">
     <nav class="gallery">
-        <ul>
-            <li class="iath">
-                <a href="profile.html">
-                    <h2>Institute for Advanced Technology in the Humanities</h2>
-                    <p>Faculty fellowships and digital projects</p>
-                </a>
-            </li>
-            <li class="scholars-lab">
-                <a href="scholarslab.html">
-                    <h2>The Scholars’ Lab</h2>
-                    <p>Experimental humanities and graduate training</p>
-                </a>
-            </li>
-            <li class="shanti">
-                <a href="profile.html">
-                    <h2>SHANTI</h2>
-                    <p>A robust digital tools ecosystem at UVa</p>
-                </a>
-            </li>
-            <li class="rotunda">
-                <a href="profile.html">
-                    <h2>Rotunda</h2>
-                    <p>Scholarly publishing through the digital imprint of the UVa Press</p>
-                </a>
-            </li>
-            <li class="virginia-foundation-for-the-humanities">
-                <a href="profile.html">
-                    <h2>Virginia Foundation for the Humanities</h2>
-                    <p>Public humanities and online initiatives</p>
-                </a>
-            </li>
-            <li class="uva-library-services">
-                <a href="profile.html">
-                    <h2>UVa Library services</h2>
-                    <p>Using and preserving statistical and geospatial data and digital media</p>
-                </a>
-            </li>
-            <li class="center-for-data-ethics-law-and-policy">
-                <a href="profile.html">
-                    <h2>Center for Data Ethics, Law, and Policy</h2>
-                    <p>More humane outlooks on a big data world</p>
-                </a>
-            </li>
-            <li class="virginia-center-for-computer-music">
-                <a href="profile.html">
-                    <h2>Virginia Center for Computer Music</h2>
-                    <p>Making sound and sense</p>
-                </a>
-            </li>
-            <li class="history-and-futures-of-the-book">
-                <a href="profile.html">
-                    <h2>The Institute for Public History</h2>
-                    <p>Advancing best practices in digital, public history</p>
-                </a>
-            </li>
+      <ul>
+        {% for center in site.data.centers %}
+          {% assign centerkey = center[0] %}
+          {% assign centerdata = center[1] %}
+          <li class="{{centerkey}}">
+            <a href="{{centerkey}}.html">
+              <h2>{{ centerdata.name }}</h2>
+              <p>{{ centerdata.description }}</p>
+            </a>
+          </li>
+        {% endfor %}
         </ul>
     </nav>
 </section>

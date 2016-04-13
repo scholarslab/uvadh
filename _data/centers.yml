@@ -1,0 +1,30 @@
+scholarslab:
+  name: Scholars' Lab
+  url: http://scholarslab.org
+  twitter: scholarslab
+  description: Experimental humanities and graduate training
+
+iath:
+  name: Institute for Advanced Technology in the Humanities
+  url: http://iath.virginia.edu
+  twitter: IATH_Virginia
+  description: Faculty fellowships and digital projects
+
+shanti:
+  name: Science, Humanities, & Arts Network of Technological Initiatives
+  url: http://shanti.virginia.edu
+  twitter: A robust digital tools ecosystem at UVA
+
+rds:
+  name: Research Data Services
+  url: http://data.library.virginia.edu
+  description: Consultation and training in research data
+
+arcs:
+  name: Advanced Research Computing Services
+  url: http://arcs.virginia.edu
+  description:
+
+dsi-centers:
+  name: DSI Centers
+  url: http://dsi.virginia.edu
