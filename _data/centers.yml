@@ -2,13 +2,21 @@ scholarslab:
   name: Scholars' Lab
   url: http://scholarslab.org
   description: Experimental humanities and graduate training
-  twitter: scholarslab
+  elsewhere:
+    website: http://scholarslab.org
+    email: mailto:scholarslab@virginia.edu
+    twitter: http://twitter.com/scholarslab
+    facebook: http://facebook.com/scholarslab
+    google: http://plus.google.com/+ScholarsLab
+    github: http://github.com/scholarslab
+    vimeo: http://vimeo.com/scholarslab
 
 iath:
   name: Institute for Advanced Technology in the Humanities
   url: http://iath.virginia.edu
   description: Faculty fellowships and digital projects
-  twitter: IATH_Virginia
+  elsewhere:
+    twitter: IATH_Virginia
 
 shanti:
   name: Science, Humanities, & Arts Network of Technological Initiatives
