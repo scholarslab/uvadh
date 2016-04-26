@@ -1,3 +1,8 @@
 exclude: ['Rakefile', 'Procfile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', '_settings.yml']
+gems: ['bourbon', 'susy', 'jekyll-feed', 'jekyll-sitemap']
 
 title: Digital Humanities
+
+sass:
+  sass_dir: _sass
+  style: compressed

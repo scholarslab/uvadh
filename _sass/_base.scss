@@ -1,6 +1,6 @@
 // Imports
-@import "compass";
-@import "susyone";
+@import "bourbon";
+@import "susy";
 @import "functions";
 @import "mixins";
 @import "normalize";
@@ -8,21 +8,7 @@
 // Development
 $development: false;
 
-// Compass
-$base-font-size: 18px;
-$base-line-height: 36px;
-$grid-background-baseline-color: rgba(black,0.2); // Background color for Compass's vertical rhythm.
-$grid-background-column-color: rgba(black,0.05); // Background color for grid columns
-$grid-background-baseline-height: $base-line-height;
-$default-transition-duration: .5s;
-
 // Susy
-$total-columns: 18;
-$column-width: $base-line-height * 2;
-/*$gutter-width: $base-line-height / 2;*/
-$gutter-width: 0px;
-$container-style: fluid;
-$grid-padding: $column-width + $gutter-width;
 
 // Colors
 $base-color                     : #cc4000;
