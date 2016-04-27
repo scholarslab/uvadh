@@ -1,5 +1,6 @@
 scholarslab:
   name: Scholars' Lab
+  location: The University of Virginia Library
   url: http://scholarslab.org
   description: Experimental humanities and graduate training
   elsewhere:
@@ -25,6 +26,7 @@ shanti:
 
 rds:
   name: Research Data Services
+  location: The University of Virginia Library
   url: http://data.library.virginia.edu
   description: Consultation and training in research data
 

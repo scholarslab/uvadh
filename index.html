@@ -4,12 +4,15 @@ bodyclass: home
 ---
 
 <section id="introduction">
-    <h1>Introduction</h1>
-    <p>UVa scholars have been international leaders in humanities computing for the past two decades. Here's a fresh look at the labs, centers, and services supporting their work.</p>
+    <h1>Our Goals</h1>
+    <p>UVa scholars have been international leaders in humanities computing for the past two decades. Practicing DH @ UVa seeks to showcase the vibrant communities involved in digital work, offer pathways to getting started, and expand collaborations among practioners.</p>
 </section>
 
-<section id="categories">
-    <nav class="gallery">
+<section id="centers-and-labs">
+  <h1>Centers and Labs</h1>
+  <p>Across Grounds, there are many centers and labs supporting digital work. Criteria for listing centers and labs include: Arts, Humanities, and Social Sciences focus; existing digital support, services, and/or research; and web presence. Did we miss you? Add your center.</p>
+   <nav class="gallery">
+
       <ul>
         {% for center in site.data.centers %}
           {% assign centerkey = center[0] %}
@@ -17,11 +20,24 @@ bodyclass: home
           <li class="{{centerkey}}">
             <a href="{{centerkey}}.html">
               <h2>{{ centerdata.name }}</h2>
+              <p class="location">{{ centerdata.location }}</p>
               <p>{{ centerdata.description }}</p>
             </a>
           </li>
         {% endfor %}
         </ul>
     </nav>
-</section>
+  </section>
+
+  <section id="aspirations">
+    <h1>Events and Works in Progress</h1>
+    <p>Essentially, there are many different communities of practice at UVa doing work in the digital humanities, and we’d like to work together ways to build bridges among these communities, in sustainable, thoughtful, and engaging ways. Below are upcoming events and aspirational next steps. Please consider contributing your ideas, goals, and needs.</p>
+    <h2>Call for Editors and Practicing DH @ UVa listserv</h2>
+    <h2>CFP Fall Symposium and Planning Spring Showcase</h2>
+    <h2>Suggestions for getting started in DH @ UVa</h2>
+    <h2>Humanities and Digital Humanities Resources</h2>
+    <h2>Shared Calendar of DH Events</h2>
+
+
+  </section>
 
