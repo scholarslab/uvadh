@@ -254,10 +254,12 @@
       font-size: 85%;
       width: 33%;
       padding: 20px;
+      padding-top: 50px;
       min-height: 260px;
       margin-bottom: .5%;
       background-size: cover;
-      text-align:right;
+      text-align:center;
+      border-radius: 50%;
     }
 
     h2 {
@@ -283,13 +285,13 @@
       .#{$org} main header
       {
           @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .5), rgba($overlay-color, .5)),
+            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
             url("/i/#{$org}.jpg")
           );
         &:hover,
         &:focus {
           @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
+            linear-gradient(to left, rgba($overlay-color, .35), rgba($overlay-color, .35)),
             url("/i/#{$org}.jpg")
           );
         }
