@@ -28,8 +28,9 @@
     &:active {color: $link-active-color;}
 
     @include transition(
-      color .5s ease-in,
-      background-color .5s ease-in
+      color 2s ease-in,
+      background-color 2s ease-in,
+      background-image 2s ease-in
     );
 
     &:before {
@@ -61,7 +62,19 @@
         background: $complementary-color;
         margin: 0 auto 0.2em;
         content: " ";
-        width: 100px;
+        width: 50px;
+    }
+
+    .gallery &:before {
+      display:none;
+    }
+
+  }
+
+  h1 {
+    font-size: 50px;
+    main & {
+      font-size: 40px;
     }
 
   }
@@ -145,10 +158,19 @@
 
   header[role=banner] {
     z-index:1;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position:relative;
     text-align:center;
-    padding: 10px 20px;
+    padding: 50px;
+
+    .home & {
+      height: 50vh;
+      min-height: 200px;
+    }
+
     background-color: $complementary-color;
     @include background(
       linear-gradient(to left, transparent, rgba(white, 0.05)),
@@ -188,9 +210,7 @@
       }
     }
 
-    padding: 10px 20px;
-
-    .rotunda {
+    .rotunda-icon {
       display:block;
       margin:10px auto;
       float:none;
@@ -208,10 +228,103 @@
     z-index:100;
     position:relative;
     background-color: white;
+    padding: 0 40px;
   }
 
+  #introduction {
+    font-size: 140%;
+    line-height: 1.75;
+    color: #909090;
+    font-style:italic;
+    max-width: 780px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    min-height: 300px;
+    h1 {
+      @extend .visuallyhidden;
+    }
+  }
+
+  .gallery {
+    padding-left:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      text-decoration:none;
+      background-color: $complementary-color;
+      color: white;
+      font-size: 85%;
+      width: 33%;
+      padding: 20px;
+      min-height: 260px;
+      margin-bottom: .5%;
+      background-size: cover;
+      text-align:right;
+    }
+
+    h2 {
+      text-align:inherit;
+    }
+  }
+
+  // Organization backgrounds
+  $orglist: shanti scholarslab iath rds arcs dsi-centers;
+
+  $overlay-color: desaturate($complementary-color, 50);
+
+  .profile main header {
+      @include background-image(
+          linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay, .75)),
+          url("/i/rotunda.jpg")
+      );
+  }
+
+  @each $org in $orglist {
+
+      a.#{$org},
+      .#{$org} main header
+      {
+          @include background-image(
+            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay, .75)),
+            url("/i/#{$org}.jpg")
+          );
+        &:hover,
+        &:focus {
+          @include background-image(
+            linear-gradient(to left, rgba($overlay-color, .95), rgba($overlay, .95)),
+            url("/i/#{$org}.jpg")
+          );
+        }
+
+      }
+
+  }
   footer[role=contentinfo] {
-    padding: 0 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding: 50px;
+    background-color: $complementary-color;
+    @include background(
+      linear-gradient(to left, transparent, rgba(white, 0.05)),
+      $complementary-color
+    );
+    background-size: 50% 100px, auto;
+
+    a {
+      color: white;
+      text-decoration:none;
+    }
+
   }
 
 }
