@@ -85,14 +85,6 @@
     }
   }
 
-  p {
-    margin: 0;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-
   ul {
     list-style:disc;
   }
@@ -280,7 +272,7 @@
 
   .profile main header {
       @include background-image(
-          linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay, .75)),
+          linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
           url("/i/rotunda.jpg")
       );
   }
@@ -291,13 +283,13 @@
       .#{$org} main header
       {
           @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay, .75)),
+            linear-gradient(to left, rgba($overlay-color, .5), rgba($overlay-color, .5)),
             url("/i/#{$org}.jpg")
           );
         &:hover,
         &:focus {
           @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .95), rgba($overlay, .95)),
+            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
             url("/i/#{$org}.jpg")
           );
         }
