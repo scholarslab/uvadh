@@ -50,20 +50,11 @@
     }
   }
 
-  h1,h2 {
+  h1 {
     clear:both;
     text-align:center;
     text-transform:uppercase;
     letter-spacing: 3px;
-
-    main &:before {
-        display:block;
-        height: 5px;
-        background: $complementary-color;
-        margin: 0 auto 0.2em;
-        content: " ";
-        width: 50px;
-    }
 
     .gallery &:before {
       display:none;
@@ -223,22 +214,60 @@
     padding: 0 40px;
   }
 
+  section {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #centers-and-labs {
+    max-width: 100%;
+    > h1,
+    > p {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
   #introduction {
     font-size: 140%;
     line-height: 1.75;
     color: #909090;
     font-style:italic;
-    max-width: 780px;
-    margin: auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     min-height: 300px;
+    &:after {
+        display:block;
+        height: 3px;
+        background: saturate(lighten($complementary-color, 20%), 50);
+        margin: .5em auto 0;
+        content: " ";
+        width: 90px;
+    }
+
+
     h1 {
       @extend .visuallyhidden;
     }
+  }
+
+  #future-directions {
+    overflow:hidden;
+    zoom:1;
+  }
+
+  #events {
+    float:left;
+    width: 48%;
+  }
+  #aspirations {
+    float:right;
+    width: 48%;
   }
 
   .gallery {
@@ -246,12 +275,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    margin-top: 2em;
     a {
       text-decoration:none;
       background-color: $complementary-color;
       color: white;
-      font-size: 85%;
       width: 33%;
       padding: 20px;
       padding-top: 50px;
