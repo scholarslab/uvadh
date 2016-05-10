@@ -1,0 +1,11 @@
+---
+layout: page
+title: Centers
+permalink: /centers/
+---
+
+{% for center in site.centers %}
+<li>
+  <a href="{{ center.url }}">{{ center.title }}</a>
+</li>
+{% endfor %}
