@@ -24,14 +24,5 @@ bodyclass: profile
 
         {{ content }}
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <ul class="elsewhere">
-                {% for link in page.elsewhere %}
-                    <li><a class="{{ link[0] }}" href="{{ link[1] }}">{{ link[0] }}</a></li>
-                {% endfor %}
-            </ul>
-        </section>
-
     </div>
 </article>
