@@ -185,7 +185,7 @@
     align-items: center;
     position:relative;
     text-align:center;
-    padding: 50px;
+    padding: 80px 50px 50px;
 
     .home & {
       height: 50vh;
@@ -243,6 +243,18 @@
       display:block;
     }
 
+  }
+
+  #notice {
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background: saturate(#c83, 80%);
+    color: white;
+    line-height: 20px;
+    z-index:10000;
+    text-align:center;
   }
 
   main {
