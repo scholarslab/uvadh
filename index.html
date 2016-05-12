@@ -12,7 +12,7 @@ bodyclass: home
   <h1>Centers and Labs</h1>
   <p>Across Grounds, there are many centers and labs supporting digital work. Criteria for listing centers and labs include: Arts, Humanities, and Social Sciences focus; existing digital support, services, and/or research; and web presence. Did we miss you? <a href="/form.html">Add your center</a>.</p>
    <nav class="gallery">
-    {% for center in site.centers %}
+    {% for center in site.centers | sort:date %}
       <a class="{{ center.key }}" href="{{ center.url }}">
           <h2>{{ center.title }}</h2>
           <p class="location">{{ center.location }}</p>
