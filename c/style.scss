@@ -113,7 +113,7 @@
     flex-direction: column;
 
   }
-  
+
   label,
   input,
   textarea {
@@ -177,6 +177,11 @@
     }
   }
 
+  .uva-logotype {
+    display:inline-block;
+    width: 240px;
+  }
+
   header[role=banner] {
     z-index:1;
     display:flex;
@@ -233,7 +238,7 @@
 
     .rotunda-icon {
       display:block;
-      margin:10px auto;
+      margin:10px auto 18px;
       float:none;
     }
 
