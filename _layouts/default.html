@@ -13,7 +13,7 @@
     <body class="{{ page.bodyclass }} {{ page.title | downcase | replace: "’", "" | replace: " ", "-" }}">
         <a id="skiplink" href="#main">Skip to Main Content</a>
           <div id="notice"><p>This site is in development. <a
-               href="mailto:dh@virginia.edu?subject=Website Feedback">Get in
+               href="mailto:{{ site.email }}?subject=Website Feedback">Get in
                touch</a> to help us make it better</a>.</p></div>
 
         <header role="banner" id="banner">
@@ -31,7 +31,7 @@
         <footer role="contentinfo">
           <p class="copyright"><a href="http://www.virginia.edu/copyright.html">&copy 2016 Rector and Visitors of the University of Virginia</a></p>
 
-          <p><a href="mailto:dh@virginia.edu">Contact Us</a> | <a href="#">Join Listserv</a></p>
+          <p><a href="mailto:{{ site.email }}">Contact Us</a></p>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -2,6 +2,7 @@ exclude: ['Rakefile', 'Procfile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.
 gems: ['bourbon', 'susy', 'jekyll-feed', 'jekyll-sitemap']
 
 title: Digital Humanities
+email: digitalhumanities@virginia.edu
 
 sass:
   sass_dir: _sass
