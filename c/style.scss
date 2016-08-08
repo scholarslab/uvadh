@@ -380,9 +380,6 @@
     }
   }
 
-  // Organization backgrounds
-  $orglist: shanti scholarslab iath rds arcs dsi-centers;
-
   $overlay-color: desaturate($complementary-color, 50);
 
   .profile main header {
@@ -390,27 +387,6 @@
           linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
           url("/i/rotunda.jpg")
       );
-  }
-
-  @each $org in $orglist {
-
-      a.#{$org},
-      .#{$org} main header
-      {
-          @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .75), rgba($overlay-color, .75)),
-            url("/i/#{$org}.jpg")
-          );
-        &:hover,
-        &:focus {
-          @include background-image(
-            linear-gradient(to left, rgba($overlay-color, .35), rgba($overlay-color, .35)),
-            url("/i/#{$org}.jpg")
-          );
-        }
-
-      }
-
   }
 
   form#profile {
