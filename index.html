@@ -5,38 +5,23 @@ bodyclass: home
 
 <section id="introduction">
     <h1>Our Goals</h1>
-    <p>UVa scholars have been international leaders in humanities computing for the past two decades. Our site seeks to showcase the vibrant communities involved in digital work, offer pathways to getting started, and expand collaborations among practitoners.</p>
+    <p>This site is a gathering place for the community of UVa scholars involved in digital scholarship in the humanities.  It will be a hub of local resources, events, conversation, and collaboration.</p>
 </section>
 
-<section id="centers-and-labs">
-  <h1>Centers and Labs</h1>
-  <p>Across Grounds, there are many centers and labs supporting digital work. Criteria for listing centers and labs include: Arts, Humanities, and Social Sciences focus; existing digital support, services, and/or research; and web presence. Did we miss you? <a href="/form.html">Add your center</a>.</p>
-   <nav class="gallery">
-    {% for center in site.centers | sort:date %}
-      <a class="{{ center.key }}" href="{{ center.url }}">
-          <h2>{{ center.title }}</h2>
-          <p class="location">{{ center.location }}</p>
-          <p>{{ center.description }}</p>
-        </a>
-    {% endfor %}
-    </nav>
+<div id="aspects">
+  <section id="collaborators">
+    <h1><i class="icon ion-chatbubbles"></i>Collaborators</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="{{ site.baseurl }}/collaborators/">View all Collaborators</a>
   </section>
-
-  <section id="future-directions">
-    <h1>Future Directions</h1>
-    <p>There are many different communities of practice at UVa doing work in the digital humanities, and we’d like to work together ways to build bridges among these communities, in sustainable, thoughtful, and engaging ways. Below are upcoming events and aspirational next steps. Please consider contributing your ideas, goals, and needs.</p>
-    <section id="events">
-      <h2>Shared Calendar of DH Events</h2>
-      <p><i>Coming soon!</i></p>
-    </section>
-    <section id="aspirations">
-      <h2>Works in Progress</h2>
-      <ul>
-        <li>Call for Editors and Practicing DH @ UVa listserv</li>
-        <li>CFP Fall Symposium and Planning Spring Showcase</li>
-        <li>Suggestions for getting started in DH @ UVa</li>
-        <li>Humanities and Digital Humanities Resources</li>
-      </ul>
-    </section>
+  <section id="projects">
+    <h1><i class="icon ion-images"></i>Projects</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="{{ site.baseurl }}/projects/">View all Projects</a>
   </section>
-
+  <section id="events">
+    <h1><i class="icon ion-calendar"></i>Events</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="{{ site.baseurl }}/events/">View all Projects</a>
+  </section>
+</div>
