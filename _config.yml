@@ -12,3 +12,9 @@ collections:
   centers:
     output: true
     permalink: /centers/:path/
+  collaborators:
+    output: true
+    permalink: /collaborators/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/

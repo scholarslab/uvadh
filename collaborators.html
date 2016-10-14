@@ -1,0 +1,12 @@
+---
+layout: page
+title: Collaborators
+permalink: /collaborators/
+---
+
+{% for collaborator in site.collaborators %}
+<li>
+  <a href="{{ collaborator.url }}">{{ collaborator.title }}</a>
+</li>
+{% endfor %}
+
