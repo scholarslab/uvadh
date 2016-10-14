@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="project">
+  <h1>{{ page.title }}</h1>
+
+  <div id="metadata">
+    <section id="collaborations">
+    <h2>People</h2>
+    <ul>
+      {% for person in page.people %}
+        <li><a href="#">{{ person.name }}</a></li>
+    {% endfor %}
+    </ul>
+    </section>
+
+    <section id="collaborations">
+    <h2>Collaborations</h2>
+    <ul>
+      {% for collaboration in page.collaborations %}
+        <li><a href="#">{{ collaboration | replace: '-', ' ' }}</a></li>
+    {% endfor %}
+    </ul>
+    </section>
+
+  </div>
+
+  <div id="about">
+    {{ content }}
+  </div>
+</article>

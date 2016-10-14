@@ -368,11 +368,13 @@
   }
 
 
-  .collaborator {
+  .collaborator,
+  .project {
     overflow:hidden;
     padding-bottom: 1.5rem;
     
-    #affiliations {
+    #affiliations,
+    #collaborators {
       ul {
         list-style:none;
         margin-left:0;
@@ -399,6 +401,10 @@
         }
       }
 
+      h2:first-of-type {
+        margin-top:0;
+      }
+      
       float:right;
       width: 30%;
     }

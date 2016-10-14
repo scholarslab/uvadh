@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article class="collaborator">
+  <h1>{{ page.title }}</h1>
+
+  <section id="affiliations">
+  <h2>Affiliations</h2>
+  <ul class="affiliations">
+  {% for affiliation in page.affiliations %}
+    <li>{{ affiliation.title }}, {{ affiliation.name }}</li>
+  {% endfor %}
+  </ul>
+  </section>
+
+  <div id="metadata">
+    <section id="academic-fields">
+    <h2>Academic Fields</h2>
+    <ul>
+      {% for field in page.academic-fields %}
+        <li><a href="#">{{ field | replace: '-', ' ' }}</a></li>
+    {% endfor %}
+    </ul>
+    </section>
+    <section id="expertise">
+    <h2>Expertise</h2>
+    <ul>
+      {% for thing in page.expertise %}
+        <li><a href="#">{{ thing | replace: '-', ' ' }}</a></li>
+    {% endfor %}
+    </ul>
+    </section>
+
+    <section id="collaborations">
+    <h2>Collaborations</h2>
+    <ul>
+      {% for collaboration in page.collaborations %}
+        <li><a href="#">{{ collaboration | replace: '-', ' ' }}</a></li>
+    {% endfor %}
+    </ul>
+    </section>
+
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    {{ content }}
+  </section>
+</article>
