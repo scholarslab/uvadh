@@ -325,9 +325,30 @@
     @include divider($base-color);
   }
 
+  #mailinglist {
+    background: lighten($base-color, 55%);
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+      i {
+        color: rgba($default-color, .8) !important;
+        margin-right: .5rem;
+        font-size: 3rem;
+        display:block;
+      }
+
+    a {
+      text-decoration:none;
+
+    }
+  }
+  
   .gallery {
     display:flex;
     flex-direction: row;
+
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2em;
