@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-        <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400italic,700italic,400,700|Source+Sans+Pro:200,400italic,700italic,400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{site.baseurl}}/c/style.css">
-        <script src="{{site.baseurl}}/j/modernizr.min.js"></script>
-        <script src="{{site.baseurl}}/j/respond.min.js"></script>
-    </head>
-    <body class="{{ page.bodyclass }} {{ page.title | downcase | replace: "’", "" | replace: " ", "-" }}">
-        <a id="skiplink" href="#main">Skip to Main Content</a>
-          <div id="notice"><p>This site is in development. <a
-               href="mailto:{{ site.email }}?subject=Website Feedback">Get in
-               touch</a> to help us make it better</a>.</p></div>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <header role="banner" id="banner">
-          <a href="{{site.baseurl}}/" id="titlelink">
-            <h1>{{ site.title }}</h1>
-            <span class="rotunda-icon"><img src="{{site.baseurl}}/i/rotunda-white.png" alt=""></span>
-            <span class="uva-logotype"><img src="{{site.baseurl}}/i/uva-logotype-white.png" alt="University of Virginia logo"></span>
-          </a>
-        </header>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400italic,700italic,400,700|Source+Serif+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{site.baseurl}}/c/style.css">
 
-        <main role="main" id="main">
-        {{ content }}
-        </main>
+  <script src="{{site.baseurl}}/j/modernizr.min.js"></script>
+  <script src="{{site.baseurl}}/j/respond.min.js"></script>
 
-        <footer role="contentinfo">
-          <p class="copyright"><a href="http://www.virginia.edu/copyright.html">&copy 2016 Rector and Visitors of the University of Virginia</a></p>
+  <a id="skiplink" href="#main">Skip to Main Content</a>
 
-          <p><a href="mailto:{{ site.email }}">Contact Us</a></p>
-        </footer>
+  <div id="notice">
+      <p>This site is in development. <a
+         href="mailto:{{ site.email }}?subject=Website Feedback">Get in
+         touch</a> to help us make it better</a>.
+      </p>
+  </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="{{site.baseurl}}/j/scrollposition.js"></script>
+  <header role="banner" id="banner">
+    <a href="{{site.baseurl}}/" id="titlelink">
+      <h1>{{ site.title }}</h1>
+      <span class="rotunda-icon"><img src="{{site.baseurl}}/i/rotunda-white.png" alt=""></span>
+      <span class="uva-logotype">University of Virginia</span>
+    </a>
+  </header>
 
-    </body>
-</html>
+  <main role="main" id="main">
+    {{ content }}
+  </main>
+
+  <footer role="contentinfo">
+    <p class="copyright"><a href="http://www.virginia.edu/copyright.html">&copy 2016 Rector and Visitors of the University of Virginia</a></p>
+
+    <p><a href="mailto:{{ site.email }}">Contact Us</a></p>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="{{site.baseurl}}/j/scrollposition.js"></script>
+
