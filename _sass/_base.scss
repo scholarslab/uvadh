@@ -11,27 +11,26 @@ $development: false;
 // Susy
 
 // Colors
-$base-color                     : #cc4000;
+$base-color                     : hsl(200, 80%, 40%);
 
-$base-color-light               : lighten($base-color, 10%);
-$base-color-lighter             : lighten($base-color, 20%);
-$base-color-lightest            : lighten($base-color, 30%);
+$base-color-light               : lighten($base-color, 5%);
+$base-color-lighter             : lighten($base-color, 10%);
+$base-color-lightest            : lighten($base-color, 15%);
 
-$base-color-dark                : darken($base-color, 10%);
-$base-color-darker              : darken($base-color, 20%);
-$base-color-darkest             : darken($base-color, 30%);
+$base-color-dark                : darken($base-color, 5%);
+$base-color-darker              : darken($base-color, 10%);
+$base-color-darkest             : darken($base-color, 15%);
 
 $complementary-color            : color-wheel($base-color, 'complementary');
-$complementary-color            : darken($complementary-color, 20);
 
-$default-color                  : rgb(90,90,90);
+$default-color                  : hsl(0,0,30%);
 $default-color-light            : rgba($default-color, 0.75);
 $default-color-lighter          : rgba($default-color, 0.5);
 $default-color-lightest         : rgba($default-color, 0.1);
 
 $link-color                     : $base-color;
-$link-visited-color             : lighten($link-color, 10%);
-$link-hover-color               : darken($link-color, 10%);
+$link-visited-color             : $base-color-light;
+$link-hover-color               : $base-color-dark;
 $link-focus-color               : $link-hover-color;
 $link-active-color              : $link-color;
 
@@ -39,7 +38,7 @@ $code-color: $default-color-light;
 $ins-color: $code-color;
 
 // Fonts
-$serif: "Noto Serif", serif;
+$serif: "Source Serif Pro", serif;
 $sans-serif: "Source Sans Pro", sans-serif;
 
 $default-font: $serif;

@@ -56,5 +56,15 @@
     }
 
 }
-            
+
+@mixin divider($color, $placement:after) {
+  &:#{$placement} {
+    display:block;
+    height: 3px;
+    background: $color;
+    margin: 1rem auto 0;
+    content: " ";
+    width: 90px;
+  }
+}
 

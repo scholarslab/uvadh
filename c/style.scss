@@ -1,5 +1,6 @@
 ---
 ---
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 @import "base";
 @import "fonts";
 
@@ -50,11 +51,11 @@
     }
   }
 
-  h1 {
+  h1,
+  .uva-logotype {
     clear:both;
-    text-align:center;
     text-transform:uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     .gallery &:before {
       display:none;
@@ -183,25 +184,19 @@
   }
 
   .uva-logotype {
-    display:inline-block;
-    width: 240px;
-    margin-top: 5px;
+    font-family: $sans-serif;
   }
 
   header[role=banner] {
     z-index:1;
     position:relative;
-    display:flex;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgba(black,.0325);
+    background-image: url('/i/sayagata-400px.png');
 
-    justify-content: space-around;
-    align-items:center;
-    background-color: $complementary-color;
-    @include background(
-      linear-gradient(to left, transparent, rgba(white, 0.05)),
-      $complementary-color
-    );
-    background-size: 50% 100px, auto;
-
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
     a {
       display:flex;
       justify-content: center;
@@ -216,15 +211,12 @@
 
     }
 
-    h1 {
+    h1,
+    .uva-logotype {
+      font-weight: 700;
       margin:0;
-      font-size: 20px;
-
-      .home & {
-        font-size: 36px;
-        line-height: 36px;
-
-      }
+      font-size: 1.5rem;
+      color: $default-color-light;
 
       &:before {
         display:none;
@@ -239,20 +231,6 @@
 
     a {
       text-decoration:none;
-
-      &:link,
-      &:visited {
-        color: rgba(white, 0.9);
-      }
-
-      &:hover,
-      &:focus {
-        color: rgba(white, 0.95);
-      }
-
-      &:active {
-        color: white;
-      }
     }
 
     .rotunda-icon {
@@ -272,7 +250,7 @@
     top:0;
     left:0;
     right: 0;
-    background: saturate(#c83, 80%);
+    background: $default-color;
     color: white;
     line-height: 20px;
     z-index:10000;
@@ -290,61 +268,61 @@
     background-color: white;
     padding: 0 40px;
   }
-
+  
+  article,
   section {
     max-width: 900px;
     margin: auto;
   }
 
-  #centers-and-labs {
-    max-width: 100%;
-    > h1,
-    > p {
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+  #aspects {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(stretch);
+    
+    section {
+      width: 30%;
+      margin-top:0;
+      padding: 0 1.5rem 1.5rem;
+      :first-child {
+        margin-top:0;
+      }
+
+      :last-child {
+        margin-bottom:0;
+      }
+
     }
 
+    h1 {
+      font-size: 1.25rem;
+      margin: 0 -1.5rem 1.5rem;
+      padding: 1.25rem 1.25rem;
+      background: $base-color;
+      text-align:center;
+      color: white;
+      color: rgba(white, .95);
+      }
+
+    i {
+      display:block;
+      font-size: 5rem;
+      text-align:center;
+    }
   }
 
   #introduction {
     font-size: 140%;
     line-height: 1.75;
-    color: #909090;
-    font-style:italic;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    min-height: 300px;
-    &:after {
-        display:block;
-        height: 3px;
-        background: saturate(lighten($complementary-color, 20%), 50);
-        margin: .5em auto 0;
-        content: " ";
-        width: 90px;
-    }
-
+    color: $default-color-light;
+    max-width: 900px;
+    margin: 4rem auto;
 
     h1 {
       @extend .visuallyhidden;
     }
-  }
 
-  #future-directions {
-    overflow:hidden;
-    zoom:1;
-  }
-
-  #events {
-    float:left;
-    width: 48%;
-  }
-  #aspirations {
-    float:right;
-    width: 48%;
+    @include divider($base-color);
   }
 
   .gallery {
@@ -389,6 +367,49 @@
       );
   }
 
+
+  .collaborator {
+    overflow:hidden;
+    padding-bottom: 1.5rem;
+    
+    #affiliations {
+      ul {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+      }
+      h2 {
+        @extend .visuallyhidden;
+      }
+    }
+
+    #metadata {
+
+      ul {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+      }
+
+      li {
+        display:inline;
+
+        & + li:before {
+          content: " · ";
+        }
+      }
+
+      float:right;
+      width: 30%;
+    }
+
+    #about {
+      margin:0;
+      width: 65%;
+      float:left;
+    }
+  }
+
   form#profile {
     max-width: 500px;
     margin-left: auto;
@@ -402,17 +423,8 @@
     align-items: center;
     text-align:center;
     padding: 50px;
-    background-color: $complementary-color;
-    @include background(
-      linear-gradient(to left, transparent, rgba(white, 0.05)),
-      $complementary-color
-    );
-    background-size: 50% 100px, auto;
 
-    a {
-      color: white;
-      text-decoration:none;
-    }
+    @include divider($default-color-lightest, 'before');
 
   }
 
